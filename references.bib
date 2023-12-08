@@ -424,6 +424,51 @@
   eprint        = "2307.16376"
 }
 
+@ARTICLE{Khattab2023-kl,
+  title         = "{DSPy}: Compiling Declarative Language Model Calls into
+                   {Self-Improving} Pipelines",
+  author        = "Khattab, Omar and Singhvi, Arnav and Maheshwari, Paridhi and
+                   Zhang, Zhiyuan and Santhanam, Keshav and Vardhamanan, Sri
+                   and Haq, Saiful and Sharma, Ashutosh and Joshi, Thomas T and
+                   Moazam, Hanna and Miller, Heather and Zaharia, Matei and
+                   Potts, Christopher",
+  abstract      = "The ML community is rapidly exploring techniques for
+                   prompting language models (LMs) and for stacking them into
+                   pipelines that solve complex tasks. Unfortunately, existing
+                   LM pipelines are typically implemented using hard-coded
+                   ``prompt templates'', i.e. lengthy strings discovered via
+                   trial and error. Toward a more systematic approach for
+                   developing and optimizing LM pipelines, we introduce DSPy, a
+                   programming model that abstracts LM pipelines as text
+                   transformation graphs, i.e. imperative computational graphs
+                   where LMs are invoked through declarative modules. DSPy
+                   modules are parameterized, meaning they can learn (by
+                   creating and collecting demonstrations) how to apply
+                   compositions of prompting, finetuning, augmentation, and
+                   reasoning techniques. We design a compiler that will
+                   optimize any DSPy pipeline to maximize a given metric. We
+                   conduct two case studies, showing that succinct DSPy
+                   programs can express and optimize sophisticated LM pipelines
+                   that reason about math word problems, tackle multi-hop
+                   retrieval, answer complex questions, and control agent
+                   loops. Within minutes of compiling, a few lines of DSPy
+                   allow GPT-3.5 and llama2-13b-chat to self-bootstrap
+                   pipelines that outperform standard few-shot prompting
+                   (generally by over 25\% and 65\%, respectively) and
+                   pipelines with expert-created demonstrations (by up to
+                   5-46\% and 16-40\%, respectively). On top of that, DSPy
+                   programs compiled to open and relatively small LMs like
+                   770M-parameter T5 and llama2-13b-chat are competitive with
+                   approaches that rely on expert-written prompt chains for
+                   proprietary GPT-3.5. DSPy is available at
+                   https://github.com/stanfordnlp/dspy",
+  month         =  oct,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2310.03714"
+}
+
 @ARTICLE{Berner2021-zg,
   title         = "The Modern Mathematics of Deep Learning",
   author        = "Berner, Julius and Grohs, Philipp and Kutyniok, Gitta and
@@ -490,34 +535,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2310.02238"
-}
-
-@ARTICLE{Jiang2023-bo,
-  title         = "Mistral {7B}",
-  author        = "Jiang, Albert Q and Sablayrolles, Alexandre and Mensch,
-                   Arthur and Bamford, Chris and Chaplot, Devendra Singh and de
-                   las Casas, Diego and Bressand, Florian and Lengyel, Gianna
-                   and Lample, Guillaume and Saulnier, Lucile and Lavaud,
-                   L{\'e}lio Renard and Lachaux, Marie-Anne and Stock, Pierre
-                   and Le Scao, Teven and Lavril, Thibaut and Wang, Thomas and
-                   Lacroix, Timoth{\'e}e and El Sayed, William",
-  abstract      = "We introduce Mistral 7B v0.1, a 7-billion-parameter language
-                   model engineered for superior performance and efficiency.
-                   Mistral 7B outperforms Llama 2 13B across all evaluated
-                   benchmarks, and Llama 1 34B in reasoning, mathematics, and
-                   code generation. Our model leverages grouped-query attention
-                   (GQA) for faster inference, coupled with sliding window
-                   attention (SWA) to effectively handle sequences of arbitrary
-                   length with a reduced inference cost. We also provide a
-                   model fine-tuned to follow instructions, Mistral 7B --
-                   Instruct, that surpasses the Llama 2 13B -- Chat model both
-                   on human and automated benchmarks. Our models are released
-                   under the Apache 2.0 license.",
-  month         =  oct,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2310.06825"
 }
 
 @ARTICLE{Ha2018-db,
@@ -3265,6 +3282,34 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2311.07689"
+}
+
+@ARTICLE{Jiang2023-bo,
+  title         = "Mistral {7B}",
+  author        = "Jiang, Albert Q and Sablayrolles, Alexandre and Mensch,
+                   Arthur and Bamford, Chris and Chaplot, Devendra Singh and de
+                   las Casas, Diego and Bressand, Florian and Lengyel, Gianna
+                   and Lample, Guillaume and Saulnier, Lucile and Lavaud,
+                   L{\'e}lio Renard and Lachaux, Marie-Anne and Stock, Pierre
+                   and Le Scao, Teven and Lavril, Thibaut and Wang, Thomas and
+                   Lacroix, Timoth{\'e}e and El Sayed, William",
+  abstract      = "We introduce Mistral 7B v0.1, a 7-billion-parameter language
+                   model engineered for superior performance and efficiency.
+                   Mistral 7B outperforms Llama 2 13B across all evaluated
+                   benchmarks, and Llama 1 34B in reasoning, mathematics, and
+                   code generation. Our model leverages grouped-query attention
+                   (GQA) for faster inference, coupled with sliding window
+                   attention (SWA) to effectively handle sequences of arbitrary
+                   length with a reduced inference cost. We also provide a
+                   model fine-tuned to follow instructions, Mistral 7B --
+                   Instruct, that surpasses the Llama 2 13B -- Chat model both
+                   on human and automated benchmarks. Our models are released
+                   under the Apache 2.0 license.",
+  month         =  oct,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2310.06825"
 }
 
 @ARTICLE{Shi2023-pu,
