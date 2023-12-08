@@ -540,49 +540,48 @@
   eprint        = "2310.02238"
 }
 
-@ARTICLE{Ganguli2022-wn,
-  title         = "Red Teaming Language Models to Reduce Harms: Methods,
-                   Scaling Behaviors, and Lessons Learned",
-  author        = "Ganguli, Deep and Lovitt, Liane and Kernion, Jackson and
-                   Askell, Amanda and Bai, Yuntao and Kadavath, Saurav and
-                   Mann, Ben and Perez, Ethan and Schiefer, Nicholas and
-                   Ndousse, Kamal and Jones, Andy and Bowman, Sam and Chen,
-                   Anna and Conerly, Tom and DasSarma, Nova and Drain, Dawn and
-                   Elhage, Nelson and El-Showk, Sheer and Fort, Stanislav and
-                   Hatfield-Dodds, Zac and Henighan, Tom and Hernandez, Danny
-                   and Hume, Tristan and Jacobson, Josh and Johnston, Scott and
-                   Kravec, Shauna and Olsson, Catherine and Ringer, Sam and
-                   Tran-Johnson, Eli and Amodei, Dario and Brown, Tom and
-                   Joseph, Nicholas and McCandlish, Sam and Olah, Chris and
-                   Kaplan, Jared and Clark, Jack",
-  abstract      = "We describe our early efforts to red team language models in
-                   order to simultaneously discover, measure, and attempt to
-                   reduce their potentially harmful outputs. We make three main
-                   contributions. First, we investigate scaling behaviors for
-                   red teaming across 3 model sizes (2.7B, 13B, and 52B
-                   parameters) and 4 model types: a plain language model (LM);
-                   an LM prompted to be helpful, honest, and harmless; an LM
-                   with rejection sampling; and a model trained to be helpful
-                   and harmless using reinforcement learning from human
-                   feedback (RLHF). We find that the RLHF models are
-                   increasingly difficult to red team as they scale, and we
-                   find a flat trend with scale for the other model types.
-                   Second, we release our dataset of 38,961 red team attacks
-                   for others to analyze and learn from. We provide our own
-                   analysis of the data and find a variety of harmful outputs,
-                   which range from offensive language to more subtly harmful
-                   non-violent unethical outputs. Third, we exhaustively
-                   describe our instructions, processes, statistical
-                   methodologies, and uncertainty about red teaming. We hope
-                   that this transparency accelerates our ability to work
-                   together as a community in order to develop shared norms,
-                   practices, and technical standards for how to red team
-                   language models.",
-  month         =  aug,
-  year          =  2022,
+@ARTICLE{Touvron2023-xs,
+  title         = "Llama 2: Open Foundation and {Fine-Tuned} Chat Models",
+  author        = "Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert,
+                   Peter and Almahairi, Amjad and Babaei, Yasmine and
+                   Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal
+                   and Bhosale, Shruti and Bikel, Dan and Blecher, Lukas and
+                   Ferrer, Cristian Canton and Chen, Moya and Cucurull, Guillem
+                   and Esiobu, David and Fernandes, Jude and Fu, Jeremy and Fu,
+                   Wenyin and Fuller, Brian and Gao, Cynthia and Goswami,
+                   Vedanuj and Goyal, Naman and Hartshorn, Anthony and
+                   Hosseini, Saghar and Hou, Rui and Inan, Hakan and Kardas,
+                   Marcin and Kerkez, Viktor and Khabsa, Madian and Kloumann,
+                   Isabel and Korenev, Artem and Koura, Punit Singh and
+                   Lachaux, Marie-Anne and Lavril, Thibaut and Lee, Jenya and
+                   Liskovich, Diana and Lu, Yinghai and Mao, Yuning and
+                   Martinet, Xavier and Mihaylov, Todor and Mishra, Pushkar and
+                   Molybog, Igor and Nie, Yixin and Poulton, Andrew and
+                   Reizenstein, Jeremy and Rungta, Rashi and Saladi, Kalyan and
+                   Schelten, Alan and Silva, Ruan and Smith, Eric Michael and
+                   Subramanian, Ranjan and Tan, Xiaoqing Ellen and Tang, Binh
+                   and Taylor, Ross and Williams, Adina and Kuan, Jian Xiang
+                   and Xu, Puxin and Yan, Zheng and Zarov, Iliyan and Zhang,
+                   Yuchen and Fan, Angela and Kambadur, Melanie and Narang,
+                   Sharan and Rodriguez, Aurelien and Stojnic, Robert and
+                   Edunov, Sergey and Scialom, Thomas",
+  abstract      = "In this work, we develop and release Llama 2, a collection
+                   of pretrained and fine-tuned large language models (LLMs)
+                   ranging in scale from 7 billion to 70 billion parameters.
+                   Our fine-tuned LLMs, called Llama 2-Chat, are optimized for
+                   dialogue use cases. Our models outperform open-source chat
+                   models on most benchmarks we tested, and based on our human
+                   evaluations for helpfulness and safety, may be a suitable
+                   substitute for closed-source models. We provide a detailed
+                   description of our approach to fine-tuning and safety
+                   improvements of Llama 2-Chat in order to enable the
+                   community to build on our work and contribute to the
+                   responsible development of LLMs.",
+  month         =  jul,
+  year          =  2023,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2209.07858"
+  eprint        = "2307.09288"
 }
 
 @ARTICLE{Ha2018-db,
@@ -3668,6 +3667,51 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2310.06825"
+}
+
+@ARTICLE{Ganguli2022-wn,
+  title         = "Red Teaming Language Models to Reduce Harms: Methods,
+                   Scaling Behaviors, and Lessons Learned",
+  author        = "Ganguli, Deep and Lovitt, Liane and Kernion, Jackson and
+                   Askell, Amanda and Bai, Yuntao and Kadavath, Saurav and
+                   Mann, Ben and Perez, Ethan and Schiefer, Nicholas and
+                   Ndousse, Kamal and Jones, Andy and Bowman, Sam and Chen,
+                   Anna and Conerly, Tom and DasSarma, Nova and Drain, Dawn and
+                   Elhage, Nelson and El-Showk, Sheer and Fort, Stanislav and
+                   Hatfield-Dodds, Zac and Henighan, Tom and Hernandez, Danny
+                   and Hume, Tristan and Jacobson, Josh and Johnston, Scott and
+                   Kravec, Shauna and Olsson, Catherine and Ringer, Sam and
+                   Tran-Johnson, Eli and Amodei, Dario and Brown, Tom and
+                   Joseph, Nicholas and McCandlish, Sam and Olah, Chris and
+                   Kaplan, Jared and Clark, Jack",
+  abstract      = "We describe our early efforts to red team language models in
+                   order to simultaneously discover, measure, and attempt to
+                   reduce their potentially harmful outputs. We make three main
+                   contributions. First, we investigate scaling behaviors for
+                   red teaming across 3 model sizes (2.7B, 13B, and 52B
+                   parameters) and 4 model types: a plain language model (LM);
+                   an LM prompted to be helpful, honest, and harmless; an LM
+                   with rejection sampling; and a model trained to be helpful
+                   and harmless using reinforcement learning from human
+                   feedback (RLHF). We find that the RLHF models are
+                   increasingly difficult to red team as they scale, and we
+                   find a flat trend with scale for the other model types.
+                   Second, we release our dataset of 38,961 red team attacks
+                   for others to analyze and learn from. We provide our own
+                   analysis of the data and find a variety of harmful outputs,
+                   which range from offensive language to more subtly harmful
+                   non-violent unethical outputs. Third, we exhaustively
+                   describe our instructions, processes, statistical
+                   methodologies, and uncertainty about red teaming. We hope
+                   that this transparency accelerates our ability to work
+                   together as a community in order to develop shared norms,
+                   practices, and technical standards for how to red team
+                   language models.",
+  month         =  aug,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2209.07858"
 }
 
 @ARTICLE{Shi2023-pu,
