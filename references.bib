@@ -492,92 +492,32 @@
   eprint        = "2310.02238"
 }
 
-@ARTICLE{Bai2022-vb,
-  title         = "Constitutional {AI}: Harmlessness from {AI} Feedback",
-  author        = "Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and
-                   Askell, Amanda and Kernion, Jackson and Jones, Andy and
-                   Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and
-                   McKinnon, Cameron and Chen, Carol and Olsson, Catherine and
-                   Olah, Christopher and Hernandez, Danny and Drain, Dawn and
-                   Ganguli, Deep and Li, Dustin and Tran-Johnson, Eli and
-                   Perez, Ethan and Kerr, Jamie and Mueller, Jared and Ladish,
-                   Jeffrey and Landau, Joshua and Ndousse, Kamal and Lukosuite,
-                   Kamile and Lovitt, Liane and Sellitto, Michael and Elhage,
-                   Nelson and Schiefer, Nicholas and Mercado, Noemi and
-                   DasSarma, Nova and Lasenby, Robert and Larson, Robin and
-                   Ringer, Sam and Johnston, Scott and Kravec, Shauna and El
-                   Showk, Sheer and Fort, Stanislav and Lanham, Tamera and
-                   Telleen-Lawton, Timothy and Conerly, Tom and Henighan, Tom
-                   and Hume, Tristan and Bowman, Samuel R and Hatfield-Dodds,
-                   Zac and Mann, Ben and Amodei, Dario and Joseph, Nicholas and
-                   McCandlish, Sam and Brown, Tom and Kaplan, Jared",
-  abstract      = "As AI systems become more capable, we would like to enlist
-                   their help to supervise other AIs. We experiment with
-                   methods for training a harmless AI assistant through
-                   self-improvement, without any human labels identifying
-                   harmful outputs. The only human oversight is provided
-                   through a list of rules or principles, and so we refer to
-                   the method as 'Constitutional AI'. The process involves both
-                   a supervised learning and a reinforcement learning phase. In
-                   the supervised phase we sample from an initial model, then
-                   generate self-critiques and revisions, and then finetune the
-                   original model on revised responses. In the RL phase, we
-                   sample from the finetuned model, use a model to evaluate
-                   which of the two samples is better, and then train a
-                   preference model from this dataset of AI preferences. We
-                   then train with RL using the preference model as the reward
-                   signal, i.e. we use 'RL from AI Feedback' (RLAIF). As a
-                   result we are able to train a harmless but non-evasive AI
-                   assistant that engages with harmful queries by explaining
-                   its objections to them. Both the SL and RL methods can
-                   leverage chain-of-thought style reasoning to improve the
-                   human-judged performance and transparency of AI decision
-                   making. These methods make it possible to control AI
-                   behavior more precisely and with far fewer human labels.",
-  month         =  dec,
-  year          =  2022,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2212.08073"
-}
-
-@ARTICLE{Ge2023-vj,
-  title         = "{MART}: Improving {LLM} Safety with Multi-round Automatic
-                   {Red-Teaming}",
-  author        = "Ge, Suyu and Zhou, Chunting and Hou, Rui and Khabsa, Madian
-                   and Wang, Yi-Chia and Wang, Qifan and Han, Jiawei and Mao,
-                   Yuning",
-  abstract      = "Red-teaming is a common practice for mitigating unsafe
-                   behaviors in Large Language Models (LLMs), which involves
-                   thoroughly assessing LLMs to identify potential flaws and
-                   addressing them with responsible and accurate responses.
-                   While effective, manual red-teaming is costly, and existing
-                   automatic red-teaming typically discovers safety risks
-                   without addressing them. In this paper, we propose a
-                   Multi-round Automatic Red-Teaming (MART) method, which
-                   incorporates both automatic adversarial prompt writing and
-                   safe response generation, significantly increasing
-                   red-teaming scalability and the safety of the target LLM.
-                   Specifically, an adversarial LLM and a target LLM interplay
-                   with each other in an iterative manner, where the
-                   adversarial LLM aims to generate challenging prompts that
-                   elicit unsafe responses from the target LLM, while the
-                   target LLM is fine-tuned with safety aligned data on these
-                   adversarial prompts. In each round, the adversarial LLM
-                   crafts better attacks on the updated target LLM, while the
-                   target LLM also improves itself through safety fine-tuning.
-                   On adversarial prompt benchmarks, the violation rate of an
-                   LLM with limited safety alignment reduces up to 84.7\% after
-                   4 rounds of MART, achieving comparable performance to LLMs
-                   with extensive adversarial prompt writing. Notably, model
-                   helpfulness on non-adversarial prompts remains stable
-                   throughout iterations, indicating the target LLM maintains
-                   strong performance on instruction following.",
-  month         =  nov,
+@ARTICLE{Jiang2023-bo,
+  title         = "Mistral {7B}",
+  author        = "Jiang, Albert Q and Sablayrolles, Alexandre and Mensch,
+                   Arthur and Bamford, Chris and Chaplot, Devendra Singh and de
+                   las Casas, Diego and Bressand, Florian and Lengyel, Gianna
+                   and Lample, Guillaume and Saulnier, Lucile and Lavaud,
+                   L{\'e}lio Renard and Lachaux, Marie-Anne and Stock, Pierre
+                   and Le Scao, Teven and Lavril, Thibaut and Wang, Thomas and
+                   Lacroix, Timoth{\'e}e and El Sayed, William",
+  abstract      = "We introduce Mistral 7B v0.1, a 7-billion-parameter language
+                   model engineered for superior performance and efficiency.
+                   Mistral 7B outperforms Llama 2 13B across all evaluated
+                   benchmarks, and Llama 1 34B in reasoning, mathematics, and
+                   code generation. Our model leverages grouped-query attention
+                   (GQA) for faster inference, coupled with sliding window
+                   attention (SWA) to effectively handle sequences of arbitrary
+                   length with a reduced inference cost. We also provide a
+                   model fine-tuned to follow instructions, Mistral 7B --
+                   Instruct, that surpasses the Llama 2 13B -- Chat model both
+                   on human and automated benchmarks. Our models are released
+                   under the Apache 2.0 license.",
+  month         =  oct,
   year          =  2023,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2311.07689"
+  eprint        = "2310.06825"
 }
 
 @ARTICLE{Ha2018-db,
@@ -3237,6 +3177,94 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2110.07178"
+}
+
+@ARTICLE{Bai2022-vb,
+  title         = "Constitutional {AI}: Harmlessness from {AI} Feedback",
+  author        = "Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and
+                   Askell, Amanda and Kernion, Jackson and Jones, Andy and
+                   Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and
+                   McKinnon, Cameron and Chen, Carol and Olsson, Catherine and
+                   Olah, Christopher and Hernandez, Danny and Drain, Dawn and
+                   Ganguli, Deep and Li, Dustin and Tran-Johnson, Eli and
+                   Perez, Ethan and Kerr, Jamie and Mueller, Jared and Ladish,
+                   Jeffrey and Landau, Joshua and Ndousse, Kamal and Lukosuite,
+                   Kamile and Lovitt, Liane and Sellitto, Michael and Elhage,
+                   Nelson and Schiefer, Nicholas and Mercado, Noemi and
+                   DasSarma, Nova and Lasenby, Robert and Larson, Robin and
+                   Ringer, Sam and Johnston, Scott and Kravec, Shauna and El
+                   Showk, Sheer and Fort, Stanislav and Lanham, Tamera and
+                   Telleen-Lawton, Timothy and Conerly, Tom and Henighan, Tom
+                   and Hume, Tristan and Bowman, Samuel R and Hatfield-Dodds,
+                   Zac and Mann, Ben and Amodei, Dario and Joseph, Nicholas and
+                   McCandlish, Sam and Brown, Tom and Kaplan, Jared",
+  abstract      = "As AI systems become more capable, we would like to enlist
+                   their help to supervise other AIs. We experiment with
+                   methods for training a harmless AI assistant through
+                   self-improvement, without any human labels identifying
+                   harmful outputs. The only human oversight is provided
+                   through a list of rules or principles, and so we refer to
+                   the method as 'Constitutional AI'. The process involves both
+                   a supervised learning and a reinforcement learning phase. In
+                   the supervised phase we sample from an initial model, then
+                   generate self-critiques and revisions, and then finetune the
+                   original model on revised responses. In the RL phase, we
+                   sample from the finetuned model, use a model to evaluate
+                   which of the two samples is better, and then train a
+                   preference model from this dataset of AI preferences. We
+                   then train with RL using the preference model as the reward
+                   signal, i.e. we use 'RL from AI Feedback' (RLAIF). As a
+                   result we are able to train a harmless but non-evasive AI
+                   assistant that engages with harmful queries by explaining
+                   its objections to them. Both the SL and RL methods can
+                   leverage chain-of-thought style reasoning to improve the
+                   human-judged performance and transparency of AI decision
+                   making. These methods make it possible to control AI
+                   behavior more precisely and with far fewer human labels.",
+  month         =  dec,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2212.08073"
+}
+
+@ARTICLE{Ge2023-vj,
+  title         = "{MART}: Improving {LLM} Safety with Multi-round Automatic
+                   {Red-Teaming}",
+  author        = "Ge, Suyu and Zhou, Chunting and Hou, Rui and Khabsa, Madian
+                   and Wang, Yi-Chia and Wang, Qifan and Han, Jiawei and Mao,
+                   Yuning",
+  abstract      = "Red-teaming is a common practice for mitigating unsafe
+                   behaviors in Large Language Models (LLMs), which involves
+                   thoroughly assessing LLMs to identify potential flaws and
+                   addressing them with responsible and accurate responses.
+                   While effective, manual red-teaming is costly, and existing
+                   automatic red-teaming typically discovers safety risks
+                   without addressing them. In this paper, we propose a
+                   Multi-round Automatic Red-Teaming (MART) method, which
+                   incorporates both automatic adversarial prompt writing and
+                   safe response generation, significantly increasing
+                   red-teaming scalability and the safety of the target LLM.
+                   Specifically, an adversarial LLM and a target LLM interplay
+                   with each other in an iterative manner, where the
+                   adversarial LLM aims to generate challenging prompts that
+                   elicit unsafe responses from the target LLM, while the
+                   target LLM is fine-tuned with safety aligned data on these
+                   adversarial prompts. In each round, the adversarial LLM
+                   crafts better attacks on the updated target LLM, while the
+                   target LLM also improves itself through safety fine-tuning.
+                   On adversarial prompt benchmarks, the violation rate of an
+                   LLM with limited safety alignment reduces up to 84.7\% after
+                   4 rounds of MART, achieving comparable performance to LLMs
+                   with extensive adversarial prompt writing. Notably, model
+                   helpfulness on non-adversarial prompts remains stable
+                   throughout iterations, indicating the target LLM maintains
+                   strong performance on instruction following.",
+  month         =  nov,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2311.07689"
 }
 
 @ARTICLE{Shi2023-pu,
