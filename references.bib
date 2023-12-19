@@ -540,35 +540,51 @@
   eprint        = "2310.02238"
 }
 
-@ARTICLE{Mireshghallah2023-kj,
-  title         = "Can {LLMs} Keep a Secret? Testing Privacy Implications of
-                   Language Models via Contextual Integrity Theory",
-  author        = "Mireshghallah, Niloofar and Kim, Hyunwoo and Zhou, Xuhui and
-                   Tsvetkov, Yulia and Sap, Maarten and Shokri, Reza and Choi,
-                   Yejin",
-  abstract      = "The interactive use of large language models (LLMs) in AI
-                   assistants (at work, home, etc.) introduces a new set of
-                   inference-time privacy risks: LLMs are fed different types
-                   of information from multiple sources in their inputs and are
-                   expected to reason about what to share in their outputs, for
-                   what purpose and with whom, within a given context. In this
-                   work, we draw attention to the highly critical yet
-                   overlooked notion of contextual privacy by proposing
-                   ConfAIde, a benchmark designed to identify critical
-                   weaknesses in the privacy reasoning capabilities of
-                   instruction-tuned LLMs. Our experiments show that even the
-                   most capable models such as GPT-4 and ChatGPT reveal private
-                   information in contexts that humans would not, 39\% and 57\%
-                   of the time, respectively. This leakage persists even when
-                   we employ privacy-inducing prompts or chain-of-thought
-                   reasoning. Our work underscores the immediate need to
-                   explore novel inference-time privacy-preserving approaches,
-                   based on reasoning and theory of mind.",
+@ARTICLE{Sun2023-jx,
+  title         = "Parrot: Enhancing {Multi-Turn} Chat Models by Learning to
+                   Ask Questions",
+  author        = "Sun, Yuchong and Liu, Che and Huang, Jinwen and Song, Ruihua
+                   and Zhang, Fuzheng and Zhang, Di and Wang, Zhongyuan and
+                   Gai, Kun",
+  abstract      = "Impressive progress has been made on chat models based on
+                   Large Language Models (LLMs) recently; however, there is a
+                   noticeable lag in multi-turn conversations between
+                   open-source chat models (e.g., Alpaca and Vicuna) and the
+                   leading chat models (e.g., ChatGPT and GPT-4). Through a
+                   series of analyses, we attribute the lag to the lack of
+                   enough high-quality multi-turn instruction-tuning data. The
+                   available instruction-tuning data for the community are
+                   either single-turn conversations or multi-turn ones with
+                   certain issues, such as non-human-like instructions, less
+                   detailed responses, or rare topic shifts. In this paper, we
+                   address these challenges by introducing Parrot, a highly
+                   scalable solution designed to automatically generate
+                   high-quality instruction-tuning data, which are then used to
+                   enhance the effectiveness of chat models in multi-turn
+                   conversations. Specifically, we start by training the
+                   Parrot-Ask model, which is designed to emulate real users in
+                   generating instructions. We then utilize Parrot-Ask to
+                   engage in multi-turn conversations with ChatGPT across a
+                   diverse range of topics, resulting in a collection of 40K
+                   high-quality multi-turn dialogues (Parrot-40K). These data
+                   are subsequently employed to train a chat model that we have
+                   named Parrot-Chat. We demonstrate that the dialogues
+                   gathered from Parrot-Ask markedly outperform existing
+                   multi-turn instruction-following datasets in critical
+                   metrics, including topic diversity, number of turns, and
+                   resemblance to human conversation. With only 40K training
+                   examples, Parrot-Chat achieves strong performance against
+                   other 13B open-source models across a range of
+                   instruction-following benchmarks, and particularly excels in
+                   evaluations of multi-turn capabilities. We make all codes,
+                   datasets, and two versions of the Parrot-Ask model based on
+                   LLaMA2-13B and KuaiYii-13B available at
+                   https://github.com/kwai/KwaiYii/Parrot.",
   month         =  oct,
   year          =  2023,
   archivePrefix = "arXiv",
-  primaryClass  = "cs.AI",
-  eprint        = "2310.17884"
+  primaryClass  = "cs.CL",
+  eprint        = "2310.07301"
 }
 
 @ARTICLE{Ha2018-db,
@@ -3453,6 +3469,37 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.AI",
   eprint        = "2309.02427"
+}
+
+@ARTICLE{Mireshghallah2023-kj,
+  title         = "Can {LLMs} Keep a Secret? Testing Privacy Implications of
+                   Language Models via Contextual Integrity Theory",
+  author        = "Mireshghallah, Niloofar and Kim, Hyunwoo and Zhou, Xuhui and
+                   Tsvetkov, Yulia and Sap, Maarten and Shokri, Reza and Choi,
+                   Yejin",
+  abstract      = "The interactive use of large language models (LLMs) in AI
+                   assistants (at work, home, etc.) introduces a new set of
+                   inference-time privacy risks: LLMs are fed different types
+                   of information from multiple sources in their inputs and are
+                   expected to reason about what to share in their outputs, for
+                   what purpose and with whom, within a given context. In this
+                   work, we draw attention to the highly critical yet
+                   overlooked notion of contextual privacy by proposing
+                   ConfAIde, a benchmark designed to identify critical
+                   weaknesses in the privacy reasoning capabilities of
+                   instruction-tuned LLMs. Our experiments show that even the
+                   most capable models such as GPT-4 and ChatGPT reveal private
+                   information in contexts that humans would not, 39\% and 57\%
+                   of the time, respectively. This leakage persists even when
+                   we employ privacy-inducing prompts or chain-of-thought
+                   reasoning. Our work underscores the immediate need to
+                   explore novel inference-time privacy-preserving approaches,
+                   based on reasoning and theory of mind.",
+  month         =  oct,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  eprint        = "2310.17884"
 }
 
 @ARTICLE{Ding2023-cq,
