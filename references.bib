@@ -3741,6 +3741,33 @@
   eprint        = "2305.16635"
 }
 
+@ARTICLE{Li2023-gd,
+  title         = "{Self-Alignment} with Instruction Backtranslation",
+  author        = "Li, Xian and Yu, Ping and Zhou, Chunting and Schick, Timo
+                   and Zettlemoyer, Luke and Levy, Omer and Weston, Jason and
+                   Lewis, Mike",
+  abstract      = "We present a scalable method to build a high quality
+                   instruction following language model by automatically
+                   labelling human-written text with corresponding
+                   instructions. Our approach, named instruction
+                   backtranslation, starts with a language model finetuned on a
+                   small amount of seed data, and a given web corpus. The seed
+                   model is used to construct training examples by generating
+                   instruction prompts for web documents (self-augmentation),
+                   and then selecting high quality examples from among these
+                   candidates (self-curation). This data is then used to
+                   finetune a stronger model. Finetuning LLaMa on two
+                   iterations of our approach yields a model that outperforms
+                   all other LLaMa-based models on the Alpaca leaderboard not
+                   relying on distillation data, demonstrating highly effective
+                   self-alignment.",
+  month         =  aug,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2308.06259"
+}
+
 @ARTICLE{Zheng2023-on,
   title         = "Synapse: {Trajectory-as-Exemplar} Prompting with Memory for
                    Computer Control",
