@@ -627,48 +627,45 @@
   eprint        = "2105.07113"
 }
 
-@ARTICLE{Guha2023-ku,
-  title         = "{LegalBench}: A Collaboratively Built Benchmark for
-                   Measuring Legal Reasoning in Large Language Models",
-  author        = "Guha, Neel and Nyarko, Julian and Ho, Daniel E and R{\'e},
-                   Christopher and Chilton, Adam and Narayana, Aditya and
-                   Chohlas-Wood, Alex and Peters, Austin and Waldon, Brandon
-                   and Rockmore, Daniel N and Zambrano, Diego and Talisman,
-                   Dmitry and Hoque, Enam and Surani, Faiz and Fagan, Frank and
-                   Sarfaty, Galit and Dickinson, Gregory M and Porat, Haggai
-                   and Hegland, Jason and Wu, Jessica and Nudell, Joe and
-                   Niklaus, Joel and Nay, John and Choi, Jonathan H and Tobia,
-                   Kevin and Hagan, Margaret and Ma, Megan and Livermore,
-                   Michael and Rasumov-Rahe, Nikon and Holzenberger, Nils and
-                   Kolt, Noam and Henderson, Peter and Rehaag, Sean and Goel,
-                   Sharad and Gao, Shang and Williams, Spencer and Gandhi,
-                   Sunny and Zur, Tom and Iyer, Varun and Li, Zehua",
-  abstract      = "The advent of large language models (LLMs) and their
-                   adoption by the legal community has given rise to the
-                   question: what types of legal reasoning can LLMs perform? To
-                   enable greater study of this question, we present
-                   LegalBench: a collaboratively constructed legal reasoning
-                   benchmark consisting of 162 tasks covering six different
-                   types of legal reasoning. LegalBench was built through an
-                   interdisciplinary process, in which we collected tasks
-                   designed and hand-crafted by legal professionals. Because
-                   these subject matter experts took a leading role in
-                   construction, tasks either measure legal reasoning
-                   capabilities that are practically useful, or measure
-                   reasoning skills that lawyers find interesting. To enable
-                   cross-disciplinary conversations about LLMs in the law, we
-                   additionally show how popular legal frameworks for
-                   describing legal reasoning -- which distinguish between its
-                   many forms -- correspond to LegalBench tasks, thus giving
-                   lawyers and LLM developers a common vocabulary. This paper
-                   describes LegalBench, presents an empirical evaluation of 20
-                   open-source and commercial LLMs, and illustrates the types
-                   of research explorations LegalBench enables.",
-  month         =  aug,
-  year          =  2023,
+@ARTICLE{Han2022-yh,
+  title         = "{FOLIO}: Natural Language Reasoning with {First-Order} Logic",
+  author        = "Han, Simeng and Schoelkopf, Hailey and Zhao, Yilun and Qi,
+                   Zhenting and Riddell, Martin and Benson, Luke and Sun, Lucy
+                   and Zubova, Ekaterina and Qiao, Yujie and Burtell, Matthew
+                   and Peng, David and Fan, Jonathan and Liu, Yixin and Wong,
+                   Brian and Sailor, Malcolm and Ni, Ansong and Nan, Linyong
+                   and Kasai, Jungo and Yu, Tao and Zhang, Rui and Joty, Shafiq
+                   and Fabbri, Alexander R and Kryscinski, Wojciech and Lin, Xi
+                   Victoria and Xiong, Caiming and Radev, Dragomir",
+  abstract      = "We present FOLIO, a human-annotated, open-domain, and
+                   logically complex and diverse dataset for reasoning in
+                   natural language (NL), equipped with first order logic (FOL)
+                   annotations. FOLIO consists of 1,435 examples (unique
+                   conclusions), each paired with one of 487 sets of premises
+                   which serve as rules to be used to deductively reason for
+                   the validity of each conclusion. The logical correctness of
+                   premises and conclusions is ensured by their parallel FOL
+                   annotations, which are automatically verified by our FOL
+                   inference engine. In addition to the main NL reasoning task,
+                   NL-FOL pairs in FOLIO automatically constitute a new NL-FOL
+                   translation dataset using FOL as the logical form. Our
+                   experiments on FOLIO systematically evaluate the FOL
+                   reasoning ability of supervised fine-tuning on medium-sized
+                   language models (BERT, RoBERTa) and few-shot prompting on
+                   large language models (GPT-NeoX, OPT, GPT-3, Codex). For
+                   NL-FOL translation, we experiment with GPT-3 and Codex. Our
+                   results show that one of the most capable Large Language
+                   Model (LLM) publicly available, GPT-3 davinci, achieves only
+                   slightly better than random results with few-shot prompting
+                   on a subset of FOLIO, and the model is especially bad at
+                   predicting the correct truth values for False and Unknown
+                   conclusions. Our dataset and code are available at
+                   https://github.com/Yale-LILY/FOLIO.",
+  month         =  sep,
+  year          =  2022,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2308.11462"
+  eprint        = "2209.00840"
 }
 
 @ARTICLE{Kim2023-ms,
@@ -5248,6 +5245,50 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2109.08133"
+}
+
+@ARTICLE{Guha2023-ku,
+  title         = "{LegalBench}: A Collaboratively Built Benchmark for
+                   Measuring Legal Reasoning in Large Language Models",
+  author        = "Guha, Neel and Nyarko, Julian and Ho, Daniel E and R{\'e},
+                   Christopher and Chilton, Adam and Narayana, Aditya and
+                   Chohlas-Wood, Alex and Peters, Austin and Waldon, Brandon
+                   and Rockmore, Daniel N and Zambrano, Diego and Talisman,
+                   Dmitry and Hoque, Enam and Surani, Faiz and Fagan, Frank and
+                   Sarfaty, Galit and Dickinson, Gregory M and Porat, Haggai
+                   and Hegland, Jason and Wu, Jessica and Nudell, Joe and
+                   Niklaus, Joel and Nay, John and Choi, Jonathan H and Tobia,
+                   Kevin and Hagan, Margaret and Ma, Megan and Livermore,
+                   Michael and Rasumov-Rahe, Nikon and Holzenberger, Nils and
+                   Kolt, Noam and Henderson, Peter and Rehaag, Sean and Goel,
+                   Sharad and Gao, Shang and Williams, Spencer and Gandhi,
+                   Sunny and Zur, Tom and Iyer, Varun and Li, Zehua",
+  abstract      = "The advent of large language models (LLMs) and their
+                   adoption by the legal community has given rise to the
+                   question: what types of legal reasoning can LLMs perform? To
+                   enable greater study of this question, we present
+                   LegalBench: a collaboratively constructed legal reasoning
+                   benchmark consisting of 162 tasks covering six different
+                   types of legal reasoning. LegalBench was built through an
+                   interdisciplinary process, in which we collected tasks
+                   designed and hand-crafted by legal professionals. Because
+                   these subject matter experts took a leading role in
+                   construction, tasks either measure legal reasoning
+                   capabilities that are practically useful, or measure
+                   reasoning skills that lawyers find interesting. To enable
+                   cross-disciplinary conversations about LLMs in the law, we
+                   additionally show how popular legal frameworks for
+                   describing legal reasoning -- which distinguish between its
+                   many forms -- correspond to LegalBench tasks, thus giving
+                   lawyers and LLM developers a common vocabulary. This paper
+                   describes LegalBench, presents an empirical evaluation of 20
+                   open-source and commercial LLMs, and illustrates the types
+                   of research explorations LegalBench enables.",
+  month         =  aug,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2308.11462"
 }
 
 @ARTICLE{Caines2023-pr,
