@@ -627,45 +627,40 @@
   eprint        = "2105.07113"
 }
 
-@ARTICLE{Han2022-yh,
-  title         = "{FOLIO}: Natural Language Reasoning with {First-Order} Logic",
-  author        = "Han, Simeng and Schoelkopf, Hailey and Zhao, Yilun and Qi,
-                   Zhenting and Riddell, Martin and Benson, Luke and Sun, Lucy
-                   and Zubova, Ekaterina and Qiao, Yujie and Burtell, Matthew
-                   and Peng, David and Fan, Jonathan and Liu, Yixin and Wong,
-                   Brian and Sailor, Malcolm and Ni, Ansong and Nan, Linyong
-                   and Kasai, Jungo and Yu, Tao and Zhang, Rui and Joty, Shafiq
-                   and Fabbri, Alexander R and Kryscinski, Wojciech and Lin, Xi
-                   Victoria and Xiong, Caiming and Radev, Dragomir",
-  abstract      = "We present FOLIO, a human-annotated, open-domain, and
-                   logically complex and diverse dataset for reasoning in
-                   natural language (NL), equipped with first order logic (FOL)
-                   annotations. FOLIO consists of 1,435 examples (unique
-                   conclusions), each paired with one of 487 sets of premises
-                   which serve as rules to be used to deductively reason for
-                   the validity of each conclusion. The logical correctness of
-                   premises and conclusions is ensured by their parallel FOL
-                   annotations, which are automatically verified by our FOL
-                   inference engine. In addition to the main NL reasoning task,
-                   NL-FOL pairs in FOLIO automatically constitute a new NL-FOL
-                   translation dataset using FOL as the logical form. Our
-                   experiments on FOLIO systematically evaluate the FOL
-                   reasoning ability of supervised fine-tuning on medium-sized
-                   language models (BERT, RoBERTa) and few-shot prompting on
-                   large language models (GPT-NeoX, OPT, GPT-3, Codex). For
-                   NL-FOL translation, we experiment with GPT-3 and Codex. Our
-                   results show that one of the most capable Large Language
-                   Model (LLM) publicly available, GPT-3 davinci, achieves only
-                   slightly better than random results with few-shot prompting
-                   on a subset of FOLIO, and the model is especially bad at
-                   predicting the correct truth values for False and Unknown
-                   conclusions. Our dataset and code are available at
-                   https://github.com/Yale-LILY/FOLIO.",
-  month         =  sep,
+@ARTICLE{Yang2022-kx,
+  title         = "Language Models as Inductive Reasoners",
+  author        = "Yang, Zonglin and Dong, Li and Du, Xinya and Cheng, Hao and
+                   Cambria, Erik and Liu, Xiaodong and Gao, Jianfeng and Wei,
+                   Furu",
+  abstract      = "Inductive reasoning is a core component of human
+                   intelligence. In the past research of inductive reasoning
+                   within computer science, logic language is used as
+                   representations of knowledge (facts and rules, more
+                   specifically). However, logic language can cause systematic
+                   problems for inductive reasoning such as disability of
+                   handling raw input such as natural language, sensitiveness
+                   to mislabeled data, and incapacity to handle ambiguous
+                   input. To this end, we propose a new task, which is to
+                   induce natural language rules from natural language facts,
+                   and create a dataset termed DEER containing 1.2k rule-fact
+                   pairs for the task, where rules and facts are written in
+                   natural language. New automatic metrics are also proposed
+                   and analysed for the evaluation of this task. With DEER, we
+                   investigate a modern approach for inductive reasoning where
+                   we use natural language as representation for knowledge
+                   instead of logic language and use pretrained language models
+                   as ''reasoners''. Moreover, we provide the first and
+                   comprehensive analysis of how well pretrained language
+                   models can induce natural language rules from natural
+                   language facts. We also propose a new framework drawing
+                   insights from philosophy literature for this task, which we
+                   show in the experiment section that surpasses baselines in
+                   both automatic and human evaluations.",
+  month         =  dec,
   year          =  2022,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2209.00840"
+  eprint        = "2212.10923"
 }
 
 @ARTICLE{Kim2023-ms,
@@ -5289,6 +5284,47 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2308.11462"
+}
+
+@ARTICLE{Han2022-yh,
+  title         = "{FOLIO}: Natural Language Reasoning with {First-Order} Logic",
+  author        = "Han, Simeng and Schoelkopf, Hailey and Zhao, Yilun and Qi,
+                   Zhenting and Riddell, Martin and Benson, Luke and Sun, Lucy
+                   and Zubova, Ekaterina and Qiao, Yujie and Burtell, Matthew
+                   and Peng, David and Fan, Jonathan and Liu, Yixin and Wong,
+                   Brian and Sailor, Malcolm and Ni, Ansong and Nan, Linyong
+                   and Kasai, Jungo and Yu, Tao and Zhang, Rui and Joty, Shafiq
+                   and Fabbri, Alexander R and Kryscinski, Wojciech and Lin, Xi
+                   Victoria and Xiong, Caiming and Radev, Dragomir",
+  abstract      = "We present FOLIO, a human-annotated, open-domain, and
+                   logically complex and diverse dataset for reasoning in
+                   natural language (NL), equipped with first order logic (FOL)
+                   annotations. FOLIO consists of 1,435 examples (unique
+                   conclusions), each paired with one of 487 sets of premises
+                   which serve as rules to be used to deductively reason for
+                   the validity of each conclusion. The logical correctness of
+                   premises and conclusions is ensured by their parallel FOL
+                   annotations, which are automatically verified by our FOL
+                   inference engine. In addition to the main NL reasoning task,
+                   NL-FOL pairs in FOLIO automatically constitute a new NL-FOL
+                   translation dataset using FOL as the logical form. Our
+                   experiments on FOLIO systematically evaluate the FOL
+                   reasoning ability of supervised fine-tuning on medium-sized
+                   language models (BERT, RoBERTa) and few-shot prompting on
+                   large language models (GPT-NeoX, OPT, GPT-3, Codex). For
+                   NL-FOL translation, we experiment with GPT-3 and Codex. Our
+                   results show that one of the most capable Large Language
+                   Model (LLM) publicly available, GPT-3 davinci, achieves only
+                   slightly better than random results with few-shot prompting
+                   on a subset of FOLIO, and the model is especially bad at
+                   predicting the correct truth values for False and Unknown
+                   conclusions. Our dataset and code are available at
+                   https://github.com/Yale-LILY/FOLIO.",
+  month         =  sep,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2209.00840"
 }
 
 @ARTICLE{Caines2023-pr,
