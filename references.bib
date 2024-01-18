@@ -706,35 +706,40 @@
   eprint        = "2310.08491"
 }
 
-@ARTICLE{Saparov2022-rf,
-  title         = "Language Models Are Greedy Reasoners: A Systematic Formal
-                   Analysis of {Chain-of-Thought}",
-  author        = "Saparov, Abulhair and He, He",
-  abstract      = "Large language models (LLMs) have shown remarkable reasoning
-                   capabilities given chain-of-thought prompts (examples with
-                   intermediate reasoning steps). Existing benchmarks measure
-                   reasoning ability indirectly, by evaluating accuracy on
-                   downstream tasks such as mathematical reasoning. However, it
-                   is unclear how these models obtain the answers and whether
-                   they rely on simple heuristics rather than the generated
-                   chain-of-thought. To enable systematic exploration of the
-                   reasoning ability of LLMs, we present a new synthetic
-                   question-answering dataset called PrOntoQA, where each
-                   example is generated from a synthetic world model
-                   represented in first-order logic. This allows us to parse
-                   the generated chain-of-thought into symbolic proofs for
-                   formal analysis. Our analysis on InstructGPT and GPT-3 shows
-                   that LLMs are quite capable of making correct individual
-                   deduction steps, and so are generally capable of reasoning,
-                   even in fictional contexts. However, they have difficulty
-                   with proof planning: When multiple valid deduction steps are
-                   available, they are not able to systematically explore the
-                   different options.",
-  month         =  oct,
-  year          =  2022,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2210.01240"
+@ARTICLE{Trinh2024-tw,
+  title    = "Solving olympiad geometry without human demonstrations",
+  author   = "Trinh, Trieu H and Wu, Yuhuai and Le, Quoc V and He, He and
+              Luong, Thang",
+  abstract = "Proving mathematical theorems at the olympiad level represents a
+              notable milestone in human-level automated reasoning1-4, owing to
+              their reputed difficulty among the world's best talents in
+              pre-university mathematics. Current machine-learning approaches,
+              however, are not applicable to most mathematical domains owing to
+              the high cost of translating human proofs into machine-verifiable
+              format. The problem is even worse for geometry because of its
+              unique translation challenges1,5, resulting in severe scarcity of
+              training data. We propose AlphaGeometry, a theorem prover for
+              Euclidean plane geometry that sidesteps the need for human
+              demonstrations by synthesizing millions of theorems and proofs
+              across different levels of complexity. AlphaGeometry is a
+              neuro-symbolic system that uses a neural language model, trained
+              from scratch on our large-scale synthetic data, to guide a
+              symbolic deduction engine through infinite branching points in
+              challenging problems. On a test set of 30 latest olympiad-level
+              problems, AlphaGeometry solves 25, outperforming the previous
+              best method that only solves ten problems and approaching the
+              performance of an average International Mathematical Olympiad
+              (IMO) gold medallist. Notably, AlphaGeometry produces
+              human-readable proofs, solves all geometry problems in the IMO
+              2000 and 2015 under human expert evaluation and discovers a
+              generalized version of a translated IMO theorem in 2004.",
+  journal  = "Nature",
+  volume   =  625,
+  number   =  7995,
+  pages    = "476--482",
+  month    =  jan,
+  year     =  2024,
+  language = "en"
 }
 
 @INPROCEEDINGS{He2020-kp,
@@ -5971,6 +5976,37 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2212.10465"
+}
+
+@ARTICLE{Saparov2022-rf,
+  title         = "Language Models Are Greedy Reasoners: A Systematic Formal
+                   Analysis of {Chain-of-Thought}",
+  author        = "Saparov, Abulhair and He, He",
+  abstract      = "Large language models (LLMs) have shown remarkable reasoning
+                   capabilities given chain-of-thought prompts (examples with
+                   intermediate reasoning steps). Existing benchmarks measure
+                   reasoning ability indirectly, by evaluating accuracy on
+                   downstream tasks such as mathematical reasoning. However, it
+                   is unclear how these models obtain the answers and whether
+                   they rely on simple heuristics rather than the generated
+                   chain-of-thought. To enable systematic exploration of the
+                   reasoning ability of LLMs, we present a new synthetic
+                   question-answering dataset called PrOntoQA, where each
+                   example is generated from a synthetic world model
+                   represented in first-order logic. This allows us to parse
+                   the generated chain-of-thought into symbolic proofs for
+                   formal analysis. Our analysis on InstructGPT and GPT-3 shows
+                   that LLMs are quite capable of making correct individual
+                   deduction steps, and so are generally capable of reasoning,
+                   even in fictional contexts. However, they have difficulty
+                   with proof planning: When multiple valid deduction steps are
+                   available, they are not able to systematically explore the
+                   different options.",
+  month         =  oct,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2210.01240"
 }
 
 @ARTICLE{Van_Duijn2023-oz,
