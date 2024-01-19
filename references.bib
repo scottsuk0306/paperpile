@@ -706,38 +706,45 @@
   eprint        = "2310.08491"
 }
 
-@ARTICLE{Hendrycks2021-ff,
-  title         = "Measuring Mathematical Problem Solving With the {MATH}
-                   Dataset",
-  author        = "Hendrycks, Dan and Burns, Collin and Kadavath, Saurav and
-                   Arora, Akul and Basart, Steven and Tang, Eric and Song, Dawn
-                   and Steinhardt, Jacob",
-  abstract      = "Many intellectual endeavors require mathematical problem
-                   solving, but this skill remains beyond the capabilities of
-                   computers. To measure this ability in machine learning
-                   models, we introduce MATH, a new dataset of 12,500
-                   challenging competition mathematics problems. Each problem
-                   in MATH has a full step-by-step solution which can be used
-                   to teach models to generate answer derivations and
-                   explanations. To facilitate future research and increase
-                   accuracy on MATH, we also contribute a large auxiliary
-                   pretraining dataset which helps teach models the
-                   fundamentals of mathematics. Even though we are able to
-                   increase accuracy on MATH, our results show that accuracy
-                   remains relatively low, even with enormous Transformer
-                   models. Moreover, we find that simply increasing budgets and
-                   model parameter counts will be impractical for achieving
-                   strong mathematical reasoning if scaling trends continue.
-                   While scaling Transformers is automatically solving most
-                   other text-based tasks, scaling is not currently solving
-                   MATH. To have more traction on mathematical problem solving
-                   we will likely need new algorithmic advancements from the
-                   broader research community.",
-  month         =  mar,
-  year          =  2021,
+@ARTICLE{Bhagavatula2019-cg,
+  title         = "Abductive Commonsense Reasoning",
+  author        = "Bhagavatula, Chandra and Le Bras, Ronan and Malaviya,
+                   Chaitanya and Sakaguchi, Keisuke and Holtzman, Ari and
+                   Rashkin, Hannah and Downey, Doug and Yih, Scott Wen-Tau and
+                   Choi, Yejin",
+  abstract      = "Abductive reasoning is inference to the most plausible
+                   explanation. For example, if Jenny finds her house in a mess
+                   when she returns from work, and remembers that she left a
+                   window open, she can hypothesize that a thief broke into her
+                   house and caused the mess, as the most plausible
+                   explanation. While abduction has long been considered to be
+                   at the core of how people interpret and read between the
+                   lines in natural language (Hobbs et al., 1988), there has
+                   been relatively little research in support of abductive
+                   natural language inference and generation. We present the
+                   first study that investigates the viability of
+                   language-based abductive reasoning. We introduce a challenge
+                   dataset, ART, that consists of over 20k commonsense
+                   narrative contexts and 200k explanations. Based on this
+                   dataset, we conceptualize two new tasks -- (i) Abductive
+                   NLI: a multiple-choice question answering task for choosing
+                   the more likely explanation, and (ii) Abductive NLG: a
+                   conditional generation task for explaining given
+                   observations in natural language. On Abductive NLI, the best
+                   model achieves 68.9\% accuracy, well below human performance
+                   of 91.4\%. On Abductive NLG, the current best language
+                   generators struggle even more, as they lack reasoning
+                   capabilities that are trivial for humans. Our analysis leads
+                   to new insights into the types of reasoning that deep
+                   pre-trained language models fail to perform--despite their
+                   strong performance on the related but more narrowly defined
+                   task of entailment NLI--pointing to interesting avenues for
+                   future research.",
+  month         =  aug,
+  year          =  2019,
   archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2103.03874"
+  primaryClass  = "cs.CL",
+  eprint        = "1908.05739"
 }
 
 @INPROCEEDINGS{He2020-kp,
@@ -6041,6 +6048,40 @@
   month    =  jan,
   year     =  2024,
   language = "en"
+}
+
+@ARTICLE{Hendrycks2021-ff,
+  title         = "Measuring Mathematical Problem Solving With the {MATH}
+                   Dataset",
+  author        = "Hendrycks, Dan and Burns, Collin and Kadavath, Saurav and
+                   Arora, Akul and Basart, Steven and Tang, Eric and Song, Dawn
+                   and Steinhardt, Jacob",
+  abstract      = "Many intellectual endeavors require mathematical problem
+                   solving, but this skill remains beyond the capabilities of
+                   computers. To measure this ability in machine learning
+                   models, we introduce MATH, a new dataset of 12,500
+                   challenging competition mathematics problems. Each problem
+                   in MATH has a full step-by-step solution which can be used
+                   to teach models to generate answer derivations and
+                   explanations. To facilitate future research and increase
+                   accuracy on MATH, we also contribute a large auxiliary
+                   pretraining dataset which helps teach models the
+                   fundamentals of mathematics. Even though we are able to
+                   increase accuracy on MATH, our results show that accuracy
+                   remains relatively low, even with enormous Transformer
+                   models. Moreover, we find that simply increasing budgets and
+                   model parameter counts will be impractical for achieving
+                   strong mathematical reasoning if scaling trends continue.
+                   While scaling Transformers is automatically solving most
+                   other text-based tasks, scaling is not currently solving
+                   MATH. To have more traction on mathematical problem solving
+                   we will likely need new algorithmic advancements from the
+                   broader research community.",
+  month         =  mar,
+  year          =  2021,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2103.03874"
 }
 
 @ARTICLE{Van_Duijn2023-oz,
