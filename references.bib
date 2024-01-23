@@ -779,54 +779,51 @@
   eprint        = "1908.05739"
 }
 
-@ARTICLE{Zheng2023-da,
-  title         = "Secrets of {RLHF} in Large Language Models Part I: {PPO}",
-  author        = "Zheng, Rui and Dou, Shihan and Gao, Songyang and Hua, Yuan
-                   and Shen, Wei and Wang, Binghai and Liu, Yan and Jin, Senjie
-                   and Liu, Qin and Zhou, Yuhao and Xiong, Limao and Chen, Lu
-                   and Xi, Zhiheng and Xu, Nuo and Lai, Wenbin and Zhu, Minghao
-                   and Chang, Cheng and Yin, Zhangyue and Weng, Rongxiang and
-                   Cheng, Wensen and Huang, Haoran and Sun, Tianxiang and Yan,
-                   Hang and Gui, Tao and Zhang, Qi and Qiu, Xipeng and Huang,
-                   Xuanjing",
-  abstract      = "Large language models (LLMs) have formulated a blueprint for
-                   the advancement of artificial general intelligence. Its
-                   primary objective is to function as a human-centric
-                   (helpful, honest, and harmless) assistant. Alignment with
-                   humans assumes paramount significance, and reinforcement
-                   learning with human feedback (RLHF) emerges as the pivotal
-                   technological paradigm underpinning this pursuit. Current
-                   technical routes usually include
-                   \textbackslashtextbf\{reward models\} to measure human
-                   preferences, \textbackslashtextbf\{Proximal Policy
-                   Optimization\} (PPO) to optimize policy model outputs, and
-                   \textbackslashtextbf\{process supervision\} to improve
-                   step-by-step reasoning capabilities. However, due to the
-                   challenges of reward design, environment interaction, and
-                   agent training, coupled with huge trial and error cost of
-                   large language models, there is a significant barrier for AI
-                   researchers to motivate the development of technical
-                   alignment and safe landing of LLMs. The stable training of
-                   RLHF has still been a puzzle. In the first report, we
-                   dissect the framework of RLHF, re-evaluate the inner
-                   workings of PPO, and explore how the parts comprising PPO
-                   algorithms impact policy agent training. We identify policy
-                   constraints being the key factor for the effective
-                   implementation of the PPO algorithm. Therefore, we explore
-                   the PPO-max, an advanced version of PPO algorithm, to
-                   efficiently improve the training stability of the policy
-                   model. Based on our main results, we perform a comprehensive
-                   analysis of RLHF abilities compared with SFT models and
-                   ChatGPT. The absence of open-source implementations has
-                   posed significant challenges to the investigation of LLMs
-                   alignment. Therefore, we are eager to release technical
-                   reports, reward models and PPO codes, aiming to make modest
-                   contributions to the advancement of LLMs.",
-  month         =  jul,
-  year          =  2023,
+@ARTICLE{Wang2024-uh,
+  title         = "Secrets of {RLHF} in Large Language Models Part {II}: Reward
+                   Modeling",
+  author        = "Wang, Binghai and Zheng, Rui and Chen, Lu and Liu, Yan and
+                   Dou, Shihan and Huang, Caishuang and Shen, Wei and Jin,
+                   Senjie and Zhou, Enyu and Shi, Chenyu and Gao, Songyang and
+                   Xu, Nuo and Zhou, Yuhao and Fan, Xiaoran and Xi, Zhiheng and
+                   Zhao, Jun and Wang, Xiao and Ji, Tao and Yan, Hang and Shen,
+                   Lixing and Chen, Zhan and Gui, Tao and Zhang, Qi and Qiu,
+                   Xipeng and Huang, Xuanjing and Wu, Zuxuan and Jiang, Yu-Gang",
+  abstract      = "Reinforcement Learning from Human Feedback (RLHF) has become
+                   a crucial technology for aligning language models with human
+                   values and intentions, enabling models to produce more
+                   helpful and harmless responses. Reward models are trained as
+                   proxies for human preferences to drive reinforcement
+                   learning optimization. While reward models are often
+                   considered central to achieving high performance, they face
+                   the following challenges in practical applications: (1)
+                   Incorrect and ambiguous preference pairs in the dataset may
+                   hinder the reward model from accurately capturing human
+                   intent. (2) Reward models trained on data from a specific
+                   distribution often struggle to generalize to examples
+                   outside that distribution and are not suitable for iterative
+                   RLHF training. In this report, we attempt to address these
+                   two issues. (1) From a data perspective, we propose a method
+                   to measure the strength of preferences within the data,
+                   based on a voting mechanism of multiple reward models.
+                   Experimental results confirm that data with varying
+                   preference strengths have different impacts on reward model
+                   performance. We introduce a series of novel methods to
+                   mitigate the influence of incorrect and ambiguous
+                   preferences in the dataset and fully leverage high-quality
+                   preference data. (2) From an algorithmic standpoint, we
+                   introduce contrastive learning to enhance the ability of
+                   reward models to distinguish between chosen and rejected
+                   responses, thereby improving model generalization.
+                   Furthermore, we employ meta-learning to enable the reward
+                   model to maintain the ability to differentiate subtle
+                   differences in out-of-distribution samples, and this
+                   approach can be utilized for iterative RLHF optimization.",
+  month         =  jan,
+  year          =  2024,
   archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2307.04964"
+  primaryClass  = "cs.AI",
+  eprint        = "2401.06080"
 }
 
 @INPROCEEDINGS{He2020-kp,
@@ -6690,6 +6687,56 @@
   journal  = "arXiv [cs.CL]",
   month    =  dec,
   year     =  2023
+}
+
+@ARTICLE{Zheng2023-da,
+  title         = "Secrets of {RLHF} in Large Language Models Part I: {PPO}",
+  author        = "Zheng, Rui and Dou, Shihan and Gao, Songyang and Hua, Yuan
+                   and Shen, Wei and Wang, Binghai and Liu, Yan and Jin, Senjie
+                   and Liu, Qin and Zhou, Yuhao and Xiong, Limao and Chen, Lu
+                   and Xi, Zhiheng and Xu, Nuo and Lai, Wenbin and Zhu, Minghao
+                   and Chang, Cheng and Yin, Zhangyue and Weng, Rongxiang and
+                   Cheng, Wensen and Huang, Haoran and Sun, Tianxiang and Yan,
+                   Hang and Gui, Tao and Zhang, Qi and Qiu, Xipeng and Huang,
+                   Xuanjing",
+  abstract      = "Large language models (LLMs) have formulated a blueprint for
+                   the advancement of artificial general intelligence. Its
+                   primary objective is to function as a human-centric
+                   (helpful, honest, and harmless) assistant. Alignment with
+                   humans assumes paramount significance, and reinforcement
+                   learning with human feedback (RLHF) emerges as the pivotal
+                   technological paradigm underpinning this pursuit. Current
+                   technical routes usually include
+                   \textbackslashtextbf\{reward models\} to measure human
+                   preferences, \textbackslashtextbf\{Proximal Policy
+                   Optimization\} (PPO) to optimize policy model outputs, and
+                   \textbackslashtextbf\{process supervision\} to improve
+                   step-by-step reasoning capabilities. However, due to the
+                   challenges of reward design, environment interaction, and
+                   agent training, coupled with huge trial and error cost of
+                   large language models, there is a significant barrier for AI
+                   researchers to motivate the development of technical
+                   alignment and safe landing of LLMs. The stable training of
+                   RLHF has still been a puzzle. In the first report, we
+                   dissect the framework of RLHF, re-evaluate the inner
+                   workings of PPO, and explore how the parts comprising PPO
+                   algorithms impact policy agent training. We identify policy
+                   constraints being the key factor for the effective
+                   implementation of the PPO algorithm. Therefore, we explore
+                   the PPO-max, an advanced version of PPO algorithm, to
+                   efficiently improve the training stability of the policy
+                   model. Based on our main results, we perform a comprehensive
+                   analysis of RLHF abilities compared with SFT models and
+                   ChatGPT. The absence of open-source implementations has
+                   posed significant challenges to the investigation of LLMs
+                   alignment. Therefore, we are eager to release technical
+                   reports, reward models and PPO codes, aiming to make modest
+                   contributions to the advancement of LLMs.",
+  month         =  jul,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2307.04964"
 }
 
 @MISC{Gallier_undated-lz,
