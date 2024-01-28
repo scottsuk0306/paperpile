@@ -860,37 +860,38 @@
   address   = "Florence, Italy"
 }
 
-@INPROCEEDINGS{De_Bruyn2022-ts,
-  title     = "20Q: {Overlap-Free} World Knowledge Benchmark for Language
-               Models",
-  booktitle = "Proceedings of the 2nd Workshop on Natural Language Generation,
-               Evaluation, and Metrics ({GEM})",
-  author    = "De Bruyn, Maxime and Lotfi, Ehsan and Buhmann, Jeska and
-               Daelemans, Walter",
-  editor    = "Bosselut, Antoine and Chandu, Khyathi and Dhole, Kaustubh and
-               Gangal, Varun and Gehrmann, Sebastian and Jernite, Yacine and
-               Novikova, Jekaterina and Perez-Beltrachini, Laura",
-  abstract  = "What do language models know about our world? This question is
-               hard to answer but important to get right. To this end, we
-               introduce 20Q, a novel benchmark using the Twenty Questions game
-               to evaluate world knowledge and common sense of language models.
-               Thanks to our overlap-free benchmark, language models learn the
-               game of Twenty Questions without learning relevant knowledge for
-               the test set. We uncover two intuitive factors influencing the
-               world knowledge of language models: the size of the model and
-               the topic frequency in the pre-training data. Moreover, we show
-               that in-context learning is inefficient for evaluating language
-               models' world knowledge --- fine-tuning is necessary to show
-               their true capabilities. Lastly, our results show room for
-               improvement to enhance the world knowledge and common sense of
-               large language models. A potential solution would be to
-               up-sample unfrequent topics in the pre-training of language
-               models.",
-  publisher = "Association for Computational Linguistics",
-  pages     = "494--508",
-  month     =  dec,
-  year      =  2022,
-  address   = "Abu Dhabi, United Arab Emirates (Hybrid)"
+@ARTICLE{Noever2023-km,
+  title         = "Chatbots as Problem Solvers: Playing Twenty Questions with
+                   Role Reversals",
+  author        = "Noever, David and McKee, Forrest",
+  abstract      = "New chat AI applications like ChatGPT offer an advanced
+                   understanding of question context and memory across
+                   multi-step tasks, such that experiments can test its
+                   deductive reasoning. This paper proposes a multi-role and
+                   multi-step challenge, where ChatGPT plays the classic
+                   twenty-questions game but innovatively switches roles from
+                   the questioner to the answerer. The main empirical result
+                   establishes that this generation of chat applications can
+                   guess random object names in fewer than twenty questions
+                   (average, 12) and correctly guess 94\% of the time across
+                   sixteen different experimental setups. The research
+                   introduces four novel cases where the chatbot fields the
+                   questions, asks the questions, both question-answer roles,
+                   and finally tries to guess appropriate contextual emotions.
+                   One task that humans typically fail but trained chat
+                   applications complete involves playing bilingual games of
+                   twenty questions (English answers to Spanish questions).
+                   Future variations address direct problem-solving using a
+                   similar inquisitive format to arrive at novel outcomes
+                   deductively, such as patentable inventions or combination
+                   thinking. Featured applications of this dialogue format
+                   include complex protein designs, neuroscience metadata, and
+                   child development educational materials.",
+  month         =  jan,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  eprint        = "2301.01743"
 }
 
 @INPROCEEDINGS{He2020-kp,
@@ -7107,6 +7108,39 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2004.10645"
+}
+
+@INPROCEEDINGS{De_Bruyn2022-ts,
+  title     = "20Q: {Overlap-Free} World Knowledge Benchmark for Language
+               Models",
+  booktitle = "Proceedings of the 2nd Workshop on Natural Language Generation,
+               Evaluation, and Metrics ({GEM})",
+  author    = "De Bruyn, Maxime and Lotfi, Ehsan and Buhmann, Jeska and
+               Daelemans, Walter",
+  editor    = "Bosselut, Antoine and Chandu, Khyathi and Dhole, Kaustubh and
+               Gangal, Varun and Gehrmann, Sebastian and Jernite, Yacine and
+               Novikova, Jekaterina and Perez-Beltrachini, Laura",
+  abstract  = "What do language models know about our world? This question is
+               hard to answer but important to get right. To this end, we
+               introduce 20Q, a novel benchmark using the Twenty Questions game
+               to evaluate world knowledge and common sense of language models.
+               Thanks to our overlap-free benchmark, language models learn the
+               game of Twenty Questions without learning relevant knowledge for
+               the test set. We uncover two intuitive factors influencing the
+               world knowledge of language models: the size of the model and
+               the topic frequency in the pre-training data. Moreover, we show
+               that in-context learning is inefficient for evaluating language
+               models' world knowledge --- fine-tuning is necessary to show
+               their true capabilities. Lastly, our results show room for
+               improvement to enhance the world knowledge and common sense of
+               large language models. A potential solution would be to
+               up-sample unfrequent topics in the pre-training of language
+               models.",
+  publisher = "Association for Computational Linguistics",
+  pages     = "494--508",
+  month     =  dec,
+  year      =  2022,
+  address   = "Abu Dhabi, United Arab Emirates (Hybrid)"
 }
 
 @ARTICLE{Zhang2023-ra,
