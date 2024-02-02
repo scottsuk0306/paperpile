@@ -9762,6 +9762,36 @@
   eprint        = "2312.10997"
 }
 
+@ARTICLE{Wang2023-ag,
+  title         = "Improving Text Embeddings with Large Language Models",
+  author        = "Wang, Liang and Yang, Nan and Huang, Xiaolong and Yang,
+                   Linjun and Majumder, Rangan and Wei, Furu",
+  abstract      = "In this paper, we introduce a novel and simple method for
+                   obtaining high-quality text embeddings using only synthetic
+                   data and less than 1k training steps. Unlike existing
+                   methods that often depend on multi-stage intermediate
+                   pre-training with billions of weakly-supervised text pairs,
+                   followed by fine-tuning with a few labeled datasets, our
+                   method does not require building complex training pipelines
+                   or relying on manually collected datasets that are often
+                   constrained by task diversity and language coverage. We
+                   leverage proprietary LLMs to generate diverse synthetic data
+                   for hundreds of thousands of text embedding tasks across
+                   nearly 100 languages. We then fine-tune open-source
+                   decoder-only LLMs on the synthetic data using standard
+                   contrastive loss. Experiments demonstrate that our method
+                   achieves strong performance on highly competitive text
+                   embedding benchmarks without using any labeled data.
+                   Furthermore, when fine-tuned with a mixture of synthetic and
+                   labeled data, our model sets new state-of-the-art results on
+                   the BEIR and MTEB benchmarks.",
+  month         =  dec,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2401.00368"
+}
+
 @ARTICLE{Tsuta2024-so,
   title         = "Rethinking Response Evaluation from Interlocutor's Eye for
                    {Open-Domain} Dialogue Systems",
