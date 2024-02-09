@@ -343,6 +343,43 @@
   eprint        = "2205.05131"
 }
 
+@ARTICLE{Scheurer2023-ms,
+  title         = "Training Language Models with Language Feedback at Scale",
+  author        = "Scheurer, J{\'e}r{\'e}my and Campos, Jon Ander and Korbak,
+                   Tomasz and Chan, Jun Shern and Chen, Angelica and Cho,
+                   Kyunghyun and Perez, Ethan",
+  abstract      = "Pretrained language models often generate outputs that are
+                   not in line with human preferences, such as harmful text or
+                   factually incorrect summaries. Recent work approaches the
+                   above issues by learning from a simple form of human
+                   feedback: comparisons between pairs of model-generated
+                   outputs. However, comparison feedback only conveys limited
+                   information about human preferences. In this paper, we
+                   introduce Imitation learning from Language Feedback (ILF), a
+                   new approach that utilizes more informative language
+                   feedback. ILF consists of three steps that are applied
+                   iteratively: first, conditioning the language model on the
+                   input, an initial LM output, and feedback to generate
+                   refinements. Second, selecting the refinement incorporating
+                   the most feedback. Third, finetuning the language model to
+                   maximize the likelihood of the chosen refinement given the
+                   input. We show theoretically that ILF can be viewed as
+                   Bayesian Inference, similar to Reinforcement Learning from
+                   human feedback. We evaluate ILF's effectiveness on a
+                   carefully-controlled toy task and a realistic summarization
+                   task. Our experiments demonstrate that large language models
+                   accurately incorporate feedback and that finetuning with ILF
+                   scales well with the dataset size, even outperforming
+                   finetuning on human summaries. Learning from both language
+                   and comparison feedback outperforms learning from each
+                   alone, achieving human-level summarization performance.",
+  month         =  mar,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2303.16755"
+}
+
 @ARTICLE{Valmeekam2023-zi,
   title         = "On the Planning Abilities of Large Language Models -- A
                    Critical Investigation",
@@ -502,39 +539,6 @@
   pages     = "258--264",
   month     =  nov,
   year      =  2023
-}
-
-@ARTICLE{Liu2023-qb,
-  title         = "We're Afraid Language Models Aren't Modeling Ambiguity",
-  author        = "Liu, Alisa and Wu, Zhaofeng and Michael, Julian and Suhr,
-                   Alane and West, Peter and Koller, Alexander and Swayamdipta,
-                   Swabha and Smith, Noah A and Choi, Yejin",
-  abstract      = "Ambiguity is an intrinsic feature of natural language.
-                   Managing ambiguity is a key part of human language
-                   understanding, allowing us to anticipate misunderstanding as
-                   communicators and revise our interpretations as listeners.
-                   As language models (LMs) are increasingly employed as
-                   dialogue interfaces and writing aids, handling ambiguous
-                   language is critical to their success. We characterize
-                   ambiguity in a sentence by its effect on entailment
-                   relations with another sentence, and collect AmbiEnt, a
-                   linguist-annotated benchmark of 1,645 examples with diverse
-                   kinds of ambiguity. We design a suite of tests based on
-                   AmbiEnt, presenting the first evaluation of pretrained LMs
-                   to recognize ambiguity and disentangle possible meanings. We
-                   find that the task remains extremely challenging, including
-                   for GPT-4, whose generated disambiguations are considered
-                   correct only 32\% of the time in human evaluation, compared
-                   to 90\% for disambiguations in our dataset. Finally, to
-                   illustrate the value of ambiguity-sensitive tools, we show
-                   that a multilabel NLI model can flag political claims in the
-                   wild that are misleading due to ambiguity. We encourage the
-                   field to rediscover the importance of ambiguity for NLP.",
-  month         =  apr,
-  year          =  2023,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2304.14399"
 }
 
 @ARTICLE{Berner2021-zg,
@@ -3824,6 +3828,39 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2310.07521"
+}
+
+@ARTICLE{Liu2023-qb,
+  title         = "We're Afraid Language Models Aren't Modeling Ambiguity",
+  author        = "Liu, Alisa and Wu, Zhaofeng and Michael, Julian and Suhr,
+                   Alane and West, Peter and Koller, Alexander and Swayamdipta,
+                   Swabha and Smith, Noah A and Choi, Yejin",
+  abstract      = "Ambiguity is an intrinsic feature of natural language.
+                   Managing ambiguity is a key part of human language
+                   understanding, allowing us to anticipate misunderstanding as
+                   communicators and revise our interpretations as listeners.
+                   As language models (LMs) are increasingly employed as
+                   dialogue interfaces and writing aids, handling ambiguous
+                   language is critical to their success. We characterize
+                   ambiguity in a sentence by its effect on entailment
+                   relations with another sentence, and collect AmbiEnt, a
+                   linguist-annotated benchmark of 1,645 examples with diverse
+                   kinds of ambiguity. We design a suite of tests based on
+                   AmbiEnt, presenting the first evaluation of pretrained LMs
+                   to recognize ambiguity and disentangle possible meanings. We
+                   find that the task remains extremely challenging, including
+                   for GPT-4, whose generated disambiguations are considered
+                   correct only 32\% of the time in human evaluation, compared
+                   to 90\% for disambiguations in our dataset. Finally, to
+                   illustrate the value of ambiguity-sensitive tools, we show
+                   that a multilabel NLI model can flag political claims in the
+                   wild that are misleading due to ambiguity. We encourage the
+                   field to rediscover the importance of ambiguity for NLP.",
+  month         =  apr,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2304.14399"
 }
 
 @ARTICLE{Sumers2023-wy,
