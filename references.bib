@@ -537,42 +537,43 @@
   eprint        = "2310.02168"
 }
 
-@ARTICLE{Geng2023-pl,
-  title         = "Grammar-constrained decoding for structured {NLP} tasks
-                   without finetuning",
-  author        = "Geng, Saibo and Josifoski, Martin and Peyrard, Maxime and
-                   West, Robert",
-  abstract      = "Despite their impressive performance, large language models
-                   (LMs) still struggle with reliably generating complex output
-                   structures when not finetuned to follow the required output
-                   format exactly. To address this issue, grammar-constrained
-                   decoding (GCD) can be used to control the generation of LMs,
-                   guaranteeing that the output follows a given structure. Most
-                   existing GCD methods are, however, limited to specific
-                   tasks, such as parsing or code generation. In this work, we
-                   demonstrate that formal grammars can describe the output
-                   space for a much wider range of tasks and argue that GCD can
-                   serve as a unified framework for structured NLP tasks in
-                   general. For increased flexibility, we introduce
-                   input-dependent grammars, which allow the grammar to depend
-                   on the input and thus enable the generation of different
-                   output structures for different inputs. We then empirically
-                   demonstrate the power and flexibility of GCD-enhanced LMs on
-                   (1) information extraction, (2) entity disambiguation, and
-                   (3) constituency parsing. Our results indicate that
-                   grammar-constrained LMs substantially outperform
-                   unconstrained LMs or even beat task-specific finetuned
-                   models. Grammar constraints thus hold great promise for
-                   harnessing off-the-shelf LMs for a wide range of structured
-                   NLP tasks, especially where training data is scarce or
-                   finetuning is expensive. Code and data:
-                   https://github.com/epfl-dlab/GCD.",
-  month         =  may,
-  year          =  2023,
-  copyright     = "http://creativecommons.org/licenses/by/4.0/",
+@ARTICLE{Hase2024-sn,
+  title         = "The Unreasonable Effectiveness of Easy Training Data for
+                   Hard Tasks",
+  author        = "Hase, Peter and Bansal, Mohit and Clark, Peter and
+                   Wiegreffe, Sarah",
+  abstract      = "How can we train models to perform well on hard test data
+                   when hard training data is by definition difficult to label
+                   correctly? This question has been termed the scalable
+                   oversight problem and has drawn increasing attention as
+                   language models have continually improved. In this paper, we
+                   present the surprising conclusion that current language
+                   models often generalize relatively well from easy to hard
+                   data, even performing as well as ``oracle'' models trained
+                   on hard data. We demonstrate this kind of easy-to-hard
+                   generalization using simple training methods like in-context
+                   learning, linear classifier heads, and QLoRA for seven
+                   different measures of datapoint hardness, including six
+                   empirically diverse human hardness measures (like grade
+                   level) and one model-based measure (loss-based).
+                   Furthermore, we show that even if one cares most about model
+                   performance on hard data, it can be better to collect and
+                   train on easy data rather than hard data, since hard data is
+                   generally noisier and costlier to collect. Our experiments
+                   use open models up to 70b in size and four publicly
+                   available question-answering datasets with questions ranging
+                   in difficulty from 3rd grade science questions to college
+                   level STEM questions and general-knowledge trivia. We
+                   conclude that easy-to-hard generalization in LMs is
+                   surprisingly strong for the tasks studied, suggesting the
+                   scalable oversight problem may be easier than previously
+                   thought. Our code is available at
+                   https://github.com/allenai/easy-to-hard-generalization",
+  month         =  jan,
+  year          =  2024,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2305.13971"
+  eprint        = "2401.06751"
 }
 
 @ARTICLE{Berner2021-zg,
@@ -3967,6 +3968,44 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG",
   eprint        = "2301.10309"
+}
+
+@ARTICLE{Geng2023-pl,
+  title         = "Grammar-constrained decoding for structured {NLP} tasks
+                   without finetuning",
+  author        = "Geng, Saibo and Josifoski, Martin and Peyrard, Maxime and
+                   West, Robert",
+  abstract      = "Despite their impressive performance, large language models
+                   (LMs) still struggle with reliably generating complex output
+                   structures when not finetuned to follow the required output
+                   format exactly. To address this issue, grammar-constrained
+                   decoding (GCD) can be used to control the generation of LMs,
+                   guaranteeing that the output follows a given structure. Most
+                   existing GCD methods are, however, limited to specific
+                   tasks, such as parsing or code generation. In this work, we
+                   demonstrate that formal grammars can describe the output
+                   space for a much wider range of tasks and argue that GCD can
+                   serve as a unified framework for structured NLP tasks in
+                   general. For increased flexibility, we introduce
+                   input-dependent grammars, which allow the grammar to depend
+                   on the input and thus enable the generation of different
+                   output structures for different inputs. We then empirically
+                   demonstrate the power and flexibility of GCD-enhanced LMs on
+                   (1) information extraction, (2) entity disambiguation, and
+                   (3) constituency parsing. Our results indicate that
+                   grammar-constrained LMs substantially outperform
+                   unconstrained LMs or even beat task-specific finetuned
+                   models. Grammar constraints thus hold great promise for
+                   harnessing off-the-shelf LMs for a wide range of structured
+                   NLP tasks, especially where training data is scarce or
+                   finetuning is expensive. Code and data:
+                   https://github.com/epfl-dlab/GCD.",
+  month         =  may,
+  year          =  2023,
+  copyright     = "http://creativecommons.org/licenses/by/4.0/",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2305.13971"
 }
 
 @ARTICLE{Liu2023-qb,
