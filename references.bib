@@ -658,51 +658,36 @@
   eprint        = "2306.02561"
 }
 
-@ARTICLE{Lin2023-sw,
-  title         = "The Unlocking Spell on Base {LLMs}: Rethinking Alignment via
-                   {In-Context} Learning",
-  author        = "Lin, Bill Yuchen and Ravichander, Abhilasha and Lu, Ximing
-                   and Dziri, Nouha and Sclar, Melanie and Chandu, Khyathi and
-                   Bhagavatula, Chandra and Choi, Yejin",
-  abstract      = "The alignment tuning process of large language models (LLMs)
-                   typically involves instruction learning through supervised
-                   fine-tuning (SFT) and preference tuning via reinforcement
-                   learning from human feedback (RLHF). A recent study, LIMA
-                   (Zhou et al. 2023), shows that using merely 1K examples for
-                   SFT can achieve significant alignment performance as well,
-                   suggesting that the effect of alignment tuning might be
-                   ``superficial.'' This raises questions about how exactly the
-                   alignment tuning transforms a base LLM. We analyze the
-                   effect of alignment tuning by examining the token
-                   distribution shift between base LLMs and their aligned
-                   counterpart. Our findings reveal that base LLMs and their
-                   alignment-tuned versions perform nearly identically in
-                   decoding on the majority of token positions. Most
-                   distribution shifts occur with stylistic tokens. These
-                   direct evidence strongly supports the Superficial Alignment
-                   Hypothesis suggested by LIMA. Based on these findings, we
-                   rethink the alignment of LLMs by posing the research
-                   question: how effectively can we align base LLMs without SFT
-                   or RLHF? To address this, we introduce a simple, tuning-free
-                   alignment method, URIAL. URIAL achieves effective alignment
-                   purely through in-context learning (ICL) with base LLMs,
-                   requiring as few as three constant stylistic examples and a
-                   system prompt. We conduct a fine-grained and interpretable
-                   evaluation on a diverse set of examples, named
-                   JUST-EVAL-INSTRUCT. Results demonstrate that base LLMs with
-                   URIAL can match or even surpass the performance of LLMs
-                   aligned with SFT or SFT+RLHF. We show that the gap between
-                   tuning-free and tuning-based alignment methods can be
-                   significantly reduced through strategic prompting and ICL.
-                   Our findings on the superficial nature of alignment tuning
-                   and results with URIAL suggest that deeper analysis and
-                   theoretical understanding of alignment is crucial to future
-                   LLM research.",
-  month         =  dec,
+@ARTICLE{Ye2023-zh,
+  title         = "Investigating the Effectiveness of {Task-Agnostic} Prefix
+                   Prompt for Instruction Following",
+  author        = "Ye, Seonghyeon and Hwang, Hyeonbin and Yang, Sohee and Yun,
+                   Hyeongu and Kim, Yireun and Seo, Minjoon",
+  abstract      = "In this paper, we present our finding that prepending a
+                   Task-Agnostic Prefix Prompt (TAPP) to the input improves the
+                   instruction-following ability of various Large Language
+                   Models (LLMs) during inference. TAPP is different from
+                   canonical prompts for LLMs in that it is a fixed prompt
+                   prepended to the beginning of every input regardless of the
+                   target task for zero-shot generalization. We observe that
+                   both base LLMs (i.e. not fine-tuned to follow instructions)
+                   and instruction-tuned models benefit from TAPP, resulting in
+                   34.58\% and 12.26\% improvement on average, respectively.
+                   This implies that the instruction-following ability of LLMs
+                   can be improved during inference time with a fixed prompt
+                   constructed with simple heuristics. We hypothesize that TAPP
+                   assists language models to better estimate the output
+                   distribution by focusing more on the instruction of the
+                   target task during inference. In other words, such ability
+                   does not seem to be sufficiently activated in not only base
+                   LLMs but also many instruction-fine-tuned LLMs. All
+                   experiments are reproducible from
+                   https://github.com/seonghyeonye/TAPP.",
+  month         =  feb,
   year          =  2023,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2312.01552"
+  eprint        = "2302.14691"
 }
 
 @ARTICLE{Mejia-Escobar2021-mf,
@@ -5809,6 +5794,53 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG",
   eprint        = "2209.04836"
+}
+
+@ARTICLE{Lin2023-sw,
+  title         = "The Unlocking Spell on Base {LLMs}: Rethinking Alignment via
+                   {In-Context} Learning",
+  author        = "Lin, Bill Yuchen and Ravichander, Abhilasha and Lu, Ximing
+                   and Dziri, Nouha and Sclar, Melanie and Chandu, Khyathi and
+                   Bhagavatula, Chandra and Choi, Yejin",
+  abstract      = "The alignment tuning process of large language models (LLMs)
+                   typically involves instruction learning through supervised
+                   fine-tuning (SFT) and preference tuning via reinforcement
+                   learning from human feedback (RLHF). A recent study, LIMA
+                   (Zhou et al. 2023), shows that using merely 1K examples for
+                   SFT can achieve significant alignment performance as well,
+                   suggesting that the effect of alignment tuning might be
+                   ``superficial.'' This raises questions about how exactly the
+                   alignment tuning transforms a base LLM. We analyze the
+                   effect of alignment tuning by examining the token
+                   distribution shift between base LLMs and their aligned
+                   counterpart. Our findings reveal that base LLMs and their
+                   alignment-tuned versions perform nearly identically in
+                   decoding on the majority of token positions. Most
+                   distribution shifts occur with stylistic tokens. These
+                   direct evidence strongly supports the Superficial Alignment
+                   Hypothesis suggested by LIMA. Based on these findings, we
+                   rethink the alignment of LLMs by posing the research
+                   question: how effectively can we align base LLMs without SFT
+                   or RLHF? To address this, we introduce a simple, tuning-free
+                   alignment method, URIAL. URIAL achieves effective alignment
+                   purely through in-context learning (ICL) with base LLMs,
+                   requiring as few as three constant stylistic examples and a
+                   system prompt. We conduct a fine-grained and interpretable
+                   evaluation on a diverse set of examples, named
+                   JUST-EVAL-INSTRUCT. Results demonstrate that base LLMs with
+                   URIAL can match or even surpass the performance of LLMs
+                   aligned with SFT or SFT+RLHF. We show that the gap between
+                   tuning-free and tuning-based alignment methods can be
+                   significantly reduced through strategic prompting and ICL.
+                   Our findings on the superficial nature of alignment tuning
+                   and results with URIAL suggest that deeper analysis and
+                   theoretical understanding of alignment is crucial to future
+                   LLM research.",
+  month         =  dec,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2312.01552"
 }
 
 @ARTICLE{Zheng2023-on,
