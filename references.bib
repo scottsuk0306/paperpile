@@ -658,6 +658,53 @@
   eprint        = "2306.02561"
 }
 
+@ARTICLE{Lin2023-sw,
+  title         = "The Unlocking Spell on Base {LLMs}: Rethinking Alignment via
+                   {In-Context} Learning",
+  author        = "Lin, Bill Yuchen and Ravichander, Abhilasha and Lu, Ximing
+                   and Dziri, Nouha and Sclar, Melanie and Chandu, Khyathi and
+                   Bhagavatula, Chandra and Choi, Yejin",
+  abstract      = "The alignment tuning process of large language models (LLMs)
+                   typically involves instruction learning through supervised
+                   fine-tuning (SFT) and preference tuning via reinforcement
+                   learning from human feedback (RLHF). A recent study, LIMA
+                   (Zhou et al. 2023), shows that using merely 1K examples for
+                   SFT can achieve significant alignment performance as well,
+                   suggesting that the effect of alignment tuning might be
+                   ``superficial.'' This raises questions about how exactly the
+                   alignment tuning transforms a base LLM. We analyze the
+                   effect of alignment tuning by examining the token
+                   distribution shift between base LLMs and their aligned
+                   counterpart. Our findings reveal that base LLMs and their
+                   alignment-tuned versions perform nearly identically in
+                   decoding on the majority of token positions. Most
+                   distribution shifts occur with stylistic tokens. These
+                   direct evidence strongly supports the Superficial Alignment
+                   Hypothesis suggested by LIMA. Based on these findings, we
+                   rethink the alignment of LLMs by posing the research
+                   question: how effectively can we align base LLMs without SFT
+                   or RLHF? To address this, we introduce a simple, tuning-free
+                   alignment method, URIAL. URIAL achieves effective alignment
+                   purely through in-context learning (ICL) with base LLMs,
+                   requiring as few as three constant stylistic examples and a
+                   system prompt. We conduct a fine-grained and interpretable
+                   evaluation on a diverse set of examples, named
+                   JUST-EVAL-INSTRUCT. Results demonstrate that base LLMs with
+                   URIAL can match or even surpass the performance of LLMs
+                   aligned with SFT or SFT+RLHF. We show that the gap between
+                   tuning-free and tuning-based alignment methods can be
+                   significantly reduced through strategic prompting and ICL.
+                   Our findings on the superficial nature of alignment tuning
+                   and results with URIAL suggest that deeper analysis and
+                   theoretical understanding of alignment is crucial to future
+                   LLM research.",
+  month         =  dec,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2312.01552"
+}
+
 @ARTICLE{Mejia-Escobar2021-mf,
   title         = "A Large Visual, Qualitative and Quantitative Dataset of Web
                    Pages",
@@ -1498,45 +1545,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.AI",
   eprint        = "2301.01743"
-}
-
-@INPROCEEDINGS{Hessel2023-ew,
-  title     = "Do Androids Laugh at Electric Sheep? Humor {``}Understanding{''}
-               Benchmarks from The New Yorker Caption Contest",
-  booktitle = "Proceedings of the 61st Annual Meeting of the Association for
-               Computational Linguistics (Volume 1: Long Papers)",
-  author    = "Hessel, Jack and Marasovic, Ana and Hwang, Jena D and Lee,
-               Lillian and Da, Jeff and Zellers, Rowan and Mankoff, Robert and
-               Choi, Yejin",
-  editor    = "Rogers, Anna and Boyd-Graber, Jordan and Okazaki, Naoaki",
-  abstract  = "Large neural networks can now generate jokes, but do they really
-               ``understand'' humor? We challenge AI models with three tasks
-               derived from the New Yorker Cartoon Caption Contest: matching a
-               joke to a cartoon, identifying a winning caption, and explaining
-               why a winning caption is funny. These tasks encapsulate
-               progressively more sophisticated aspects of ``understanding'' a
-               cartoon; key elements are the complex, often surprising
-               relationships between images and captions and the frequent
-               inclusion of indirect and playful allusions to human experience
-               and culture. We investigate both multimodal and language-only
-               models: the former are challenged with the cartoon images
-               directly, while the latter are given multifaceted descriptions
-               of the visual scene to simulate human-level visual
-               understanding. We find that both types of models struggle at all
-               three tasks. For example, our best multimodal models fall 30
-               accuracy points behind human performance on the matching task,
-               and, even when provided ground-truth visual scene descriptors,
-               human-authored explanations are preferred head-to-head over the
-               best machine-authored ones (few-shot GPT-4) in more than 2/3 of
-               cases. We release models, code, leaderboard, and corpus, which
-               includes newly-gathered annotations describing the image's
-               locations/entities, what's unusual in the scene, and an
-               explanation of the joke.",
-  publisher = "Association for Computational Linguistics",
-  pages     = "688--714",
-  month     =  jul,
-  year      =  2023,
-  address   = "Toronto, Canada"
 }
 
 @ARTICLE{Humphreys2022-as,
@@ -10708,6 +10716,45 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.AI",
   eprint        = "2308.05374"
+}
+
+@INPROCEEDINGS{Hessel2023-ew,
+  title     = "Do Androids Laugh at Electric Sheep? Humor {``}Understanding{''}
+               Benchmarks from The New Yorker Caption Contest",
+  booktitle = "Proceedings of the 61st Annual Meeting of the Association for
+               Computational Linguistics (Volume 1: Long Papers)",
+  author    = "Hessel, Jack and Marasovic, Ana and Hwang, Jena D and Lee,
+               Lillian and Da, Jeff and Zellers, Rowan and Mankoff, Robert and
+               Choi, Yejin",
+  editor    = "Rogers, Anna and Boyd-Graber, Jordan and Okazaki, Naoaki",
+  abstract  = "Large neural networks can now generate jokes, but do they really
+               ``understand'' humor? We challenge AI models with three tasks
+               derived from the New Yorker Cartoon Caption Contest: matching a
+               joke to a cartoon, identifying a winning caption, and explaining
+               why a winning caption is funny. These tasks encapsulate
+               progressively more sophisticated aspects of ``understanding'' a
+               cartoon; key elements are the complex, often surprising
+               relationships between images and captions and the frequent
+               inclusion of indirect and playful allusions to human experience
+               and culture. We investigate both multimodal and language-only
+               models: the former are challenged with the cartoon images
+               directly, while the latter are given multifaceted descriptions
+               of the visual scene to simulate human-level visual
+               understanding. We find that both types of models struggle at all
+               three tasks. For example, our best multimodal models fall 30
+               accuracy points behind human performance on the matching task,
+               and, even when provided ground-truth visual scene descriptors,
+               human-authored explanations are preferred head-to-head over the
+               best machine-authored ones (few-shot GPT-4) in more than 2/3 of
+               cases. We release models, code, leaderboard, and corpus, which
+               includes newly-gathered annotations describing the image's
+               locations/entities, what's unusual in the scene, and an
+               explanation of the joke.",
+  publisher = "Association for Computational Linguistics",
+  pages     = "688--714",
+  month     =  jul,
+  year      =  2023,
+  address   = "Toronto, Canada"
 }
 
 @ARTICLE{Ren2023-xz,
