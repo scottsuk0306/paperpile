@@ -605,6 +605,44 @@
   eprint        = "2310.02238"
 }
 
+@ARTICLE{Zhao2024-oc,
+  title         = "Set the Clock: Temporal Alignment of Pretrained Language
+                   Models",
+  author        = "Zhao, Bowen and Brumbaugh, Zander and Wang, Yizhong and
+                   Hajishirzi, Hannaneh and Smith, Noah A",
+  abstract      = "Language models (LMs) are trained on web text originating
+                   from many points in time and, in general, without any
+                   explicit temporal grounding. This work investigates the
+                   temporal chaos of pretrained LMs and explores various
+                   methods to align their internal knowledge to a target time,
+                   which we call ``temporal alignment.'' To do this, we first
+                   automatically construct a dataset containing 20K
+                   time-sensitive questions and their answers for each year
+                   from 2000 to 2023. Based on this dataset, we empirically
+                   show that pretrained LMs (e.g., LLaMa2), despite having a
+                   recent pretraining cutoff (e.g., 2022), mostly answer
+                   questions using earlier knowledge (e.g., in 2019). We then
+                   develop several methods, from prompting to finetuning, to
+                   align LMs to use their most recent knowledge when answering
+                   questions, and investigate various factors in this
+                   alignment. Our experiments show that aligning LLaMa2 to the
+                   year 2022 can boost its performance by up to 62\% relatively
+                   as measured by that year, even without mentioning time
+                   information explicitly, indicating the possibility of
+                   aligning models' internal sense of time after pretraining.
+                   Finally, we find that alignment to a historical time is also
+                   possible, with up to 2.8$\times$ the performance of the
+                   unaligned LM in 2010 if finetuning models to that year.
+                   These findings hint at the sophistication of LMs' internal
+                   knowledge organization and the necessity of tuning them
+                   properly.",
+  month         =  feb,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2402.16797"
+}
+
 @ARTICLE{Ha2018-db,
   title         = "World Models",
   author        = "Ha, David and Schmidhuber, J{\"u}rgen",
@@ -1576,51 +1614,6 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   eprint        = "2005.11401"
-}
-
-@ARTICLE{Zhou2024-nt,
-  title         = "{ArCHer}: Training Language Model Agents via Hierarchical
-                   {Multi-Turn} {RL}",
-  author        = "Zhou, Yifei and Zanette, Andrea and Pan, Jiayi and Levine,
-                   Sergey and Kumar, Aviral",
-  abstract      = "A broad use case of large language models (LLMs) is in
-                   goal-directed decision-making tasks (or ``agent'' tasks),
-                   where an LLM needs to not just generate completions for a
-                   given prompt, but rather make intelligent decisions over a
-                   multi-turn interaction to accomplish a task (e.g., when
-                   interacting with the web, using tools, or providing customer
-                   support). Reinforcement learning (RL) provides a general
-                   paradigm to address such agent tasks, but current RL methods
-                   for LLMs largely focus on optimizing single-turn rewards. By
-                   construction, most single-turn RL methods cannot endow LLMs
-                   with the ability to intelligently seek information over
-                   multiple turns, perform credit assignment, or reason about
-                   their past actions -- all of which are critical in agent
-                   tasks. This raises the question: how can we design effective
-                   and efficient multi-turn RL algorithms for LLMs? In this
-                   paper, we develop a framework for building multi-turn RL
-                   algorithms for fine-tuning LLMs, that preserves the
-                   flexibility of existing single-turn RL methods for LLMs
-                   (e.g., proximal policy optimization), while accommodating
-                   multiple turns, long horizons, and delayed rewards
-                   effectively. To do this, our framework adopts a hierarchical
-                   RL approach and runs two RL algorithms in parallel: a
-                   high-level off-policy value-based RL algorithm to aggregate
-                   reward over utterances, and a low-level RL algorithm that
-                   utilizes this high-level value function to train a token
-                   policy within each utterance or turn. Our hierarchical
-                   framework, Actor-Critic Framework with a Hierarchical
-                   Structure (ArCHer), can also give rise to other RL methods.
-                   Empirically, we find that ArCHer significantly improves
-                   efficiency and performance on agent tasks, attaining a
-                   sample efficiency of about 100x over existing methods, while
-                   also improving with larger model capacity (upto the 7
-                   billion scale that we tested on).",
-  month         =  feb,
-  year          =  2024,
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  eprint        = "2402.19446"
 }
 
 @INPROCEEDINGS{Sitaram2023-jz,
@@ -11763,6 +11756,51 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CV",
   eprint        = "2304.15010"
+}
+
+@ARTICLE{Zhou2024-nt,
+  title         = "{ArCHer}: Training Language Model Agents via Hierarchical
+                   {Multi-Turn} {RL}",
+  author        = "Zhou, Yifei and Zanette, Andrea and Pan, Jiayi and Levine,
+                   Sergey and Kumar, Aviral",
+  abstract      = "A broad use case of large language models (LLMs) is in
+                   goal-directed decision-making tasks (or ``agent'' tasks),
+                   where an LLM needs to not just generate completions for a
+                   given prompt, but rather make intelligent decisions over a
+                   multi-turn interaction to accomplish a task (e.g., when
+                   interacting with the web, using tools, or providing customer
+                   support). Reinforcement learning (RL) provides a general
+                   paradigm to address such agent tasks, but current RL methods
+                   for LLMs largely focus on optimizing single-turn rewards. By
+                   construction, most single-turn RL methods cannot endow LLMs
+                   with the ability to intelligently seek information over
+                   multiple turns, perform credit assignment, or reason about
+                   their past actions -- all of which are critical in agent
+                   tasks. This raises the question: how can we design effective
+                   and efficient multi-turn RL algorithms for LLMs? In this
+                   paper, we develop a framework for building multi-turn RL
+                   algorithms for fine-tuning LLMs, that preserves the
+                   flexibility of existing single-turn RL methods for LLMs
+                   (e.g., proximal policy optimization), while accommodating
+                   multiple turns, long horizons, and delayed rewards
+                   effectively. To do this, our framework adopts a hierarchical
+                   RL approach and runs two RL algorithms in parallel: a
+                   high-level off-policy value-based RL algorithm to aggregate
+                   reward over utterances, and a low-level RL algorithm that
+                   utilizes this high-level value function to train a token
+                   policy within each utterance or turn. Our hierarchical
+                   framework, Actor-Critic Framework with a Hierarchical
+                   Structure (ArCHer), can also give rise to other RL methods.
+                   Empirically, we find that ArCHer significantly improves
+                   efficiency and performance on agent tasks, attaining a
+                   sample efficiency of about 100x over existing methods, while
+                   also improving with larger model capacity (upto the 7
+                   billion scale that we tested on).",
+  month         =  feb,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2402.19446"
 }
 
 @ARTICLE{Kaddour2023-qa,
