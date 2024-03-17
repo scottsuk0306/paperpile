@@ -1578,36 +1578,32 @@
   eprint        = "2005.11401"
 }
 
-@ARTICLE{Bachmann2024-ys,
-  title         = "The pitfalls of next-token prediction",
-  author        = "Bachmann, Gregor and Nagarajan, Vaishnavh",
-  abstract      = "Can a mere next-token predictor faithfully model human
-                   intelligence? We crystallize this intuitive concern, which
-                   is fragmented in the literature. As a starting point, we
-                   argue that the two often-conflated phases of next-token
-                   prediction -- autoregressive inference and teacher-forced
-                   training -- must be treated distinctly. The popular
-                   criticism that errors can compound during autoregressive
-                   inference, crucially assumes that teacher-forcing has
-                   learned an accurate next-token predictor. This assumption
-                   sidesteps a more deep-rooted problem we expose: in certain
-                   classes of tasks, teacher-forcing can simply fail to learn
-                   an accurate next-token predictor in the first place. We
-                   describe a general mechanism of how teacher-forcing can
-                   fail, and design a minimal planning task where both the
-                   Transformer and the Mamba architecture empirically fail in
-                   that manner -- remarkably, despite the task being
-                   straightforward to learn. We provide preliminary evidence
-                   that this failure can be resolved when training to predict
-                   multiple tokens in advance. We hope this finding can ground
-                   future debates and inspire explorations beyond the
-                   next-token prediction paradigm. We make our code available
-                   under https://github.com/gregorbachmann/Next-Token-Failures",
+@ARTICLE{Wang2024-yj,
+  title         = "{RAT}: Retrieval augmented thoughts elicit context-aware
+                   reasoning in long-horizon generation",
+  author        = "Wang, Zihao and Liu, Anji and Lin, Haowei and Li, Jiaqi and
+                   Ma, Xiaojian and Liang, Yitao",
+  abstract      = "We explore how iterative revising a chain of thoughts with
+                   the help of information retrieval significantly improves
+                   large language models' reasoning and generation ability in
+                   long-horizon generation tasks, while hugely mitigating
+                   hallucination. In particular, the proposed method --
+                   *retrieval-augmented thoughts* (RAT) -- revises each thought
+                   step one by one with retrieved information relevant to the
+                   task query, the current and the past thought steps, after
+                   the initial zero-shot CoT is generated. Applying RAT to
+                   GPT-3.5, GPT-4, and CodeLLaMA-7b substantially improves
+                   their performances on various long-horizon generation tasks;
+                   on average of relatively increasing rating scores by 13.63\%
+                   on code generation, 16.96\% on mathematical reasoning,
+                   19.2\% on creative writing, and 42.78\% on embodied task
+                   planning. The demo page can be found at
+                   https://craftjarvis.github.io/RAT",
   month         =  mar,
   year          =  2024,
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
-  eprint        = "2403.06963"
+  eprint        = "2403.05313"
 }
 
 @INPROCEEDINGS{Sitaram2023-jz,
@@ -11964,6 +11960,38 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CV",
   eprint        = "2304.08485"
+}
+
+@ARTICLE{Bachmann2024-ys,
+  title         = "The pitfalls of next-token prediction",
+  author        = "Bachmann, Gregor and Nagarajan, Vaishnavh",
+  abstract      = "Can a mere next-token predictor faithfully model human
+                   intelligence? We crystallize this intuitive concern, which
+                   is fragmented in the literature. As a starting point, we
+                   argue that the two often-conflated phases of next-token
+                   prediction -- autoregressive inference and teacher-forced
+                   training -- must be treated distinctly. The popular
+                   criticism that errors can compound during autoregressive
+                   inference, crucially assumes that teacher-forcing has
+                   learned an accurate next-token predictor. This assumption
+                   sidesteps a more deep-rooted problem we expose: in certain
+                   classes of tasks, teacher-forcing can simply fail to learn
+                   an accurate next-token predictor in the first place. We
+                   describe a general mechanism of how teacher-forcing can
+                   fail, and design a minimal planning task where both the
+                   Transformer and the Mamba architecture empirically fail in
+                   that manner -- remarkably, despite the task being
+                   straightforward to learn. We provide preliminary evidence
+                   that this failure can be resolved when training to predict
+                   multiple tokens in advance. We hope this finding can ground
+                   future debates and inspire explorations beyond the
+                   next-token prediction paradigm. We make our code available
+                   under https://github.com/gregorbachmann/Next-Token-Failures",
+  month         =  mar,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2403.06963"
 }
 
 @ARTICLE{Zhou2024-nt,
